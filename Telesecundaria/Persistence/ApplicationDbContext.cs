@@ -60,6 +60,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveImagen)
                       .HasColumnName("claveImagen")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_imagen()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.NombreArchivo)
@@ -93,6 +95,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveTipoDocumento)
                       .HasColumnName("claveTipoDocumento")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_tipo_doc()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.NombreDocumento)
@@ -121,6 +125,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveTipoNotificacion)
                       .HasColumnName("claveTipoNotificacion")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_tipo_notificacion()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.NombreProceso)
@@ -157,6 +163,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveConvocatoria)
                       .HasColumnName("claveConvocatoria")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_convocatoria()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.Titulo)
@@ -208,6 +216,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveRol)
                       .HasColumnName("claveRol")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_Rol()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.NombreRol)
@@ -233,6 +243,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveTutorAspirante)
                       .HasColumnName("claveTutorAspirante")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_tutor_aspirante()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.Nombre)
@@ -285,6 +297,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveTutor)
                       .HasColumnName("claveTutor")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_tutor()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.Nombre)
@@ -337,6 +351,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveAspirante)
                       .HasColumnName("claveAspirante")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_aspirante()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.Nombre)
@@ -435,6 +451,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveDireccion)
                       .HasColumnName("claveDireccion")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_direccion()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.CalleNumero)
@@ -481,6 +499,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveFila)
                       .HasColumnName("claveFila")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_lugar_fila_virtual()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.ClaveConvocatoria)
@@ -527,6 +547,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveReceptor)
                       .HasColumnName("claveReceptor")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_receptor()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.TipoReceptor)
@@ -581,6 +603,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClavePublicacion)
                       .HasColumnName("clavePublicacion")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_publicacion()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.Titulo)
@@ -658,6 +682,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveDocAspirante)
                       .HasColumnName("claveDocAspirante")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_doc_aspirante()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.FolioDocumento)
@@ -708,6 +734,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveAdjuncion)
                       .HasColumnName("claveAdjuncion")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_adjuncion()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.FechaEnvio)
@@ -761,6 +789,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveRequisito)
                       .HasColumnName("claveRequisito")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_Requisito()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.EtapaProceso)
@@ -800,6 +830,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveDestino)
                       .HasColumnName("claveDestino")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_destino()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.ClaveTipoNotificacion)
@@ -832,6 +864,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveNotificacion)
                       .HasColumnName("claveNotificacion")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_notificacion()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.Titulo)
@@ -932,6 +966,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveRevision)
                       .HasColumnName("claveRevision")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_revision()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.EstatusRevision)
@@ -985,6 +1021,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveEnvio)
                       .HasColumnName("claveEnvio")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_envio()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.ClaveNotificacion)
@@ -1034,6 +1072,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveRevisionAceptada)
                       .HasColumnName("claveRevisionAceptada")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_revision_aceptada()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.ClaveRevision)
@@ -1086,6 +1126,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveCita)
                       .HasColumnName("claveCita")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_cita()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.FechaCita)
@@ -1183,6 +1225,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveEntrega)
                       .HasColumnName("claveEntrega")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_entrega()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.FechaFormalizacion)
@@ -1231,6 +1275,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveExpediente)
                       .HasColumnName("claveExpediente")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_Expediente()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.Nombre)
@@ -1282,6 +1328,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveEmpleado)
                       .HasColumnName("claveEmpleado")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_empleado()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.FechaContratacion)
@@ -1328,6 +1376,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveUsuario)
                       .HasColumnName("claveUsuario")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_usuario()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.NombreUsuario)
@@ -1439,6 +1489,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveAlumno)
                       .HasColumnName("claveAlumno")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_Alumno()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.Matricula)
@@ -1481,6 +1533,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveGrupo)
                       .HasColumnName("claveGrupo")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_grupo()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.Grado)
@@ -1696,6 +1750,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.ClaveDocumento)
                       .HasColumnName("claveDocumento")
                       .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_Documento()")
+                      .ValueGeneratedOnAdd()
                       .IsRequired();
 
                 entity.Property(e => e.ArchivoUrl)
