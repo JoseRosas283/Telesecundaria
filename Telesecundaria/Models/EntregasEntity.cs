@@ -9,6 +9,7 @@ namespace Telesecundaria.Models
         public string EstadoFinal { get; set; }
         public string ClaveCita { get; set; }
         public string ClaveTutorAspirante { get; set; }
+        public string ClaveAspirante { get; set; }
         public string ClaveUsuario { get; set; }
 
         // Navegación
@@ -16,6 +17,8 @@ namespace Telesecundaria.Models
         public virtual CitasInscripcionEntity CitaInscripcion { get; set; }
         [JsonIgnore]
         public virtual TutorAspiranteEntity TutorAspirante { get; set; }
+        [JsonIgnore]
+        public virtual AspirantesEntity Aspirante { get; set; }
         [JsonIgnore]
         public virtual UsuariosEntity Usuario { get; set; }
 

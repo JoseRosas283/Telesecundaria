@@ -6,7 +6,7 @@ namespace Telesecundaria.Models
     {
         public string ClaveRequisito { get; set; }
         public string EtapaProceso { get; set; }
-        public bool Obligatorio { get; set; } = true;
+        public bool EstadoRequisito { get; set; } = true;
         public string FormatoExigido { get; set; }
         public string ClaveTipoDocumento { get; set; }
 

@@ -47,6 +47,14 @@ namespace Telesecundaria.Persistence
         public DbSet<UsuariosEntity> Usuarios { get; set; }
         public DbSet<EmpleadoRolEntity> EmpleadoRol { get; set; }
 
+        // DbSets nuevos
+        public DbSet<ModulosEntity> Modulos { get; set; }
+        public DbSet<PermisosEntity> Permisos { get; set; }
+        public DbSet<LogueosEntity> Logueos { get; set; }
+        public DbSet<TokenConvocatoriasEntity> TokenConvocatorias { get; set; }
+        public DbSet<CargasDocumentosEntity> CargasDocumentos { get; set; }
+        public DbSet<DetalleCargaEntity> DetalleCarga { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -111,6 +119,11 @@ namespace Telesecundaria.Persistence
 
                 entity.Property(e => e.Descripcion)
                       .HasColumnName("descripcion");
+
+                entity.Property(e => e.Estado)
+                      .HasColumnName("estado")
+                      .HasDefaultValue(true)
+                      .IsRequired();
 
                 entity.HasCheckConstraint("ck_area_tipo_doc",
                     "area IN ('Preinscripción','Inscripción','Becas','Egreso','Laboral','Institucional')");
@@ -232,6 +245,11 @@ namespace Telesecundaria.Persistence
 
                 entity.HasCheckConstraint("ck_nombre_rol",
                     "nombre_rol IN ('Directivo','Administrativo','Docente','Intendente')");
+
+                entity.HasMany(r => r.Permisos)
+                      .WithOne(p => p.Rol)
+                      .HasForeignKey(p => p.ClaveRol)
+                      .HasConstraintName("fk_permiso_rol");
             });
 
             // TutorAspirante
@@ -286,6 +304,12 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.Estado)
                       .HasColumnName("estado")
                       .HasDefaultValue(true);
+
+                entity.Property(e => e.Contrasena)
+                      .HasColumnName("contrasena")
+                      .HasMaxLength(255)
+                      .HasDefaultValue("Temporal123")
+                      .IsRequired();
             });
 
             // Tutores
@@ -626,7 +650,7 @@ namespace Telesecundaria.Persistence
                       .IsRequired();
 
                 entity.HasCheckConstraint("ck_categoria_pub",
-                    "categoria IN ('Eventos Culturales','Noticia','Aviso','Convocatorias')");
+                    "categoria IN ('Eventos Culturales','Noticia','Aviso','Convocatorias','Galería')");
 
                 entity.Property(e => e.FechaAparicion)
                       .HasColumnName("fecha_aparicion")
@@ -644,8 +668,16 @@ namespace Telesecundaria.Persistence
                       .HasColumnName("claveConvocatoria")
                       .HasMaxLength(18);
 
-                entity.Property(e => e.ClaveImagen)
-                      .HasColumnName("claveImagen")
+                entity.Property(e => e.ClaveImagenPrincipal)
+                      .HasColumnName("claveImagenPrincipal")
+                      .HasMaxLength(18);
+
+                entity.Property(e => e.ClaveImagenSecundaria)
+                      .HasColumnName("claveImagenSecundaria")
+                      .HasMaxLength(18);
+
+                entity.Property(e => e.ClaveImagenTercera)
+                      .HasColumnName("claveImagenTercera")
                       .HasMaxLength(18);
 
                 entity.Property(e => e.FechaRegistro)
@@ -666,10 +698,22 @@ namespace Telesecundaria.Persistence
                       .HasConstraintName("fk_convocatoria_publicada")
                       .IsRequired(false);
 
-                entity.HasOne(e => e.GaleriaImagen)
+                entity.HasOne(e => e.ImagenPrincipal)
                       .WithMany()
-                      .HasForeignKey(e => e.ClaveImagen)
-                      .HasConstraintName("fk_imagen_galeria")
+                      .HasForeignKey(e => e.ClaveImagenPrincipal)
+                      .HasConstraintName("fk_imagen_principal")
+                      .IsRequired(false);
+
+                entity.HasOne(e => e.ImagenSecundaria)
+                      .WithMany()
+                      .HasForeignKey(e => e.ClaveImagenSecundaria)
+                      .HasConstraintName("fk_imagen_secundaria")
+                      .IsRequired(false);
+
+                entity.HasOne(e => e.ImagenTercera)
+                      .WithMany()
+                      .HasForeignKey(e => e.ClaveImagenTercera)
+                      .HasConstraintName("fk_imagen_tercera")
                       .IsRequired(false);
             });
 
@@ -801,8 +845,8 @@ namespace Telesecundaria.Persistence
                 entity.HasCheckConstraint("ck_etapa_proceso",
                     "etapa_proceso IN ('Preinscripción','Inscripción','Becas')");
 
-                entity.Property(e => e.Obligatorio)
-                      .HasColumnName("obligatorio")
+                entity.Property(e => e.EstadoRequisito)
+                      .HasColumnName("estado_requisito")
                       .HasDefaultValue(true)
                       .IsRequired();
 
@@ -1250,6 +1294,13 @@ namespace Telesecundaria.Persistence
                       .HasMaxLength(18)
                       .IsRequired();
 
+                entity.Property(e => e.ClaveAspirante)
+                      .HasColumnName("claveAspirante")
+                      .HasMaxLength(18)
+                      .IsRequired();
+
+                entity.HasIndex(e => e.ClaveAspirante).IsUnique();
+
                 entity.Property(e => e.ClaveUsuario)
                       .HasColumnName("claveUsuario")
                       .HasMaxLength(18)
@@ -1264,6 +1315,11 @@ namespace Telesecundaria.Persistence
                       .WithMany()
                       .HasForeignKey(e => e.ClaveTutorAspirante)
                       .HasConstraintName("fk_entregas_tutor");
+
+                entity.HasOne(e => e.Aspirante)
+                      .WithMany()
+                      .HasForeignKey(e => e.ClaveAspirante)
+                      .HasConstraintName("fk_entregas_aspirante");
             });
 
             // Expedientes
@@ -1441,6 +1497,12 @@ namespace Telesecundaria.Persistence
                       .WithOne(e2 => e2.Usuario)
                       .HasForeignKey(e2 => e2.ClaveUsuario)
                       .HasConstraintName("fk_entregas_usuario");
+
+                entity.HasMany(u => u.Logueos)
+                      .WithOne(l => l.Usuario)
+                      .HasForeignKey(l => l.ClaveUsuario)
+                      .HasConstraintName("fk_logueos_usuarios")
+                      .IsRequired(false);
             });
 
             // EmpleadoRol
@@ -1512,6 +1574,8 @@ namespace Telesecundaria.Persistence
                 entity.Property(e => e.Estado)
                       .HasColumnName("estado")
                       .HasMaxLength(10);
+
+                entity.HasCheckConstraint("ck_alumno_estado", "estado IN ('Activo','Baja')");
 
                 entity.Property(e => e.ClaveExpediente)
                       .HasColumnName("claveExpediente")
@@ -1786,6 +1850,279 @@ namespace Telesecundaria.Persistence
                       .WithMany()
                       .HasForeignKey(e => e.ClaveTipoDocumento)
                       .HasConstraintName("fk_documentos_tipo");
+            });
+
+            // Nuevas tablas para OnModelCreating
+            // Modulos
+            modelBuilder.Entity<ModulosEntity>(entity =>
+            {
+                entity.ToTable("Modulos");
+                entity.HasKey(e => e.ClaveModulo);
+
+                entity.Property(e => e.ClaveModulo)
+                      .HasColumnName("claveModulo")
+                      .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_modulo()")
+                      .ValueGeneratedOnAdd()
+                      .IsRequired();
+
+                entity.Property(e => e.NombreModulo)
+                      .HasColumnName("nombre_modulo")
+                      .HasMaxLength(50)
+                      .IsRequired();
+
+                entity.HasIndex(e => e.NombreModulo).IsUnique();
+
+                entity.Property(e => e.Descripcion)
+                      .HasColumnName("descripcion");
+
+                entity.Property(e => e.UrlModulo)
+                      .HasColumnName("url_modulo")
+                      .HasMaxLength(100);
+
+                entity.Property(e => e.EstadoModulo)
+                      .HasColumnName("estado_modulo")
+                      .HasDefaultValue(true);
+
+                entity.Property(e => e.ClaveModuloPadre)
+                      .HasColumnName("claveModuloPadre")
+                      .HasMaxLength(18);
+
+                // Autorreferencia: un módulo puede tener un padre del mismo tipo
+                entity.HasOne(e => e.ModuloPadre)
+                      .WithMany(e => e.SubModulos)
+                      .HasForeignKey(e => e.ClaveModuloPadre)
+                      .HasConstraintName("fk_modulo_padre")
+                      .OnDelete(DeleteBehavior.Cascade)
+                      .IsRequired(false);
+            });
+
+            // Permisos
+            modelBuilder.Entity<PermisosEntity>(entity =>
+            {
+                entity.ToTable("Permisos");
+                entity.HasKey(e => new { e.ClaveRol, e.ClaveModulo });
+
+                entity.Property(e => e.ClaveRol)
+                      .HasColumnName("claveRol")
+                      .HasMaxLength(20)
+                      .IsRequired();
+
+                entity.Property(e => e.ClaveModulo)
+                      .HasColumnName("claveModulo")
+                      .HasMaxLength(20)
+                      .IsRequired();
+
+                entity.Property(e => e.PuedeVer)
+                      .HasColumnName("puede_ver")
+                      .HasDefaultValue(true);
+
+                entity.Property(e => e.PuedeCrear)
+                      .HasColumnName("puede_crear")
+                      .HasDefaultValue(false);
+
+                entity.Property(e => e.PuedeEditar)
+                      .HasColumnName("puede_editar")
+                      .HasDefaultValue(false);
+
+                entity.Property(e => e.PuedeEliminar)
+                      .HasColumnName("puede_eliminar")
+                      .HasDefaultValue(false);
+
+                entity.Property(e => e.FechaAsignacion)
+                      .HasColumnName("fecha_asignacion")
+                      .HasDefaultValueSql("CURRENT_TIMESTAMP");
+
+                entity.HasOne(e => e.Rol)
+                      .WithMany(r => r.Permisos)
+                      .HasForeignKey(e => e.ClaveRol)
+                      .HasConstraintName("fk_permiso_rol");
+
+                entity.HasOne(e => e.Modulo)
+                      .WithMany(m => m.Permisos)
+                      .HasForeignKey(e => e.ClaveModulo)
+                      .HasConstraintName("fk_permiso_modulo");
+            });
+
+            // Logueos
+            modelBuilder.Entity<LogueosEntity>(entity =>
+            {
+                entity.ToTable("Logueos");
+                entity.HasKey(e => e.ClaveLogueo);
+
+                entity.Property(e => e.ClaveLogueo)
+                      .HasColumnName("claveLogueo")
+                      .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_logueo()")
+                      .ValueGeneratedOnAdd()
+                      .IsRequired();
+
+                entity.Property(e => e.ClaveUsuario)
+                      .HasColumnName("claveUsuario")
+                      .HasMaxLength(18);
+
+                entity.Property(e => e.FechaAcceso)
+                      .HasColumnName("fecha_acceso")
+                      .HasDefaultValueSql("CURRENT_TIMESTAMP");
+
+                entity.Property(e => e.EstatusIntento)
+                      .HasColumnName("estatus_intento")
+                      .HasMaxLength(25)
+                      .IsRequired();
+
+                entity.HasCheckConstraint("chk_estatus_intento",
+                    "estatus_intento IN ('Exitoso','Contraseña Incorrecta','Usuario Suspendido','Usuario Inexistente','Sesión Finalizada')");
+
+                entity.Property(e => e.DireccionIp)
+                      .HasColumnName("direccion_ip")
+                      .HasMaxLength(45)
+                      .HasDefaultValue("0.0.0.0");
+
+                entity.Property(e => e.AgenteUsuario)
+                      .HasColumnName("agente_usuario")
+                      .HasDefaultValue("Desconocido");
+
+                entity.Property(e => e.FechaCierre)
+                      .HasColumnName("fecha_cierre");
+
+                // FK nullable: el usuario puede no existir en caso de intento fallido
+                entity.HasOne(e => e.Usuario)
+                      .WithMany(u => u.Logueos)
+                      .HasForeignKey(e => e.ClaveUsuario)
+                      .HasConstraintName("fk_logueos_usuarios")
+                      .OnDelete(DeleteBehavior.Cascade)
+                      .IsRequired(false);
+            });
+
+            // TokenConvocatorias
+            modelBuilder.Entity<TokenConvocatoriasEntity>(entity =>
+            {
+                entity.ToTable("TokenConvocatorias");
+                entity.HasKey(e => e.ClaveTokenConvocatoria);
+
+                entity.Property(e => e.ClaveTokenConvocatoria)
+                      .HasColumnName("claveTokenConvocatoria")
+                      .HasMaxLength(20)
+                      .HasDefaultValueSql("generar_token_convocatoria()")
+                      .ValueGeneratedOnAdd()
+                      .IsRequired();
+
+                entity.Property(e => e.TokenOriginal)
+                      .HasColumnName("token_original")
+                      .IsRequired();
+
+                entity.Property(e => e.ClaveTutorAspirante)
+                      .HasColumnName("claveTutorAspirante")
+                      .HasMaxLength(18)
+                      .IsRequired();
+
+                entity.Property(e => e.FechaInicio)
+                      .HasColumnName("fecha_inicio")
+                      .HasDefaultValueSql("CURRENT_TIMESTAMP");
+
+                entity.Property(e => e.FechaExpiracion)
+                      .HasColumnName("fecha_expiracion")
+                      .IsRequired();
+
+                entity.Property(e => e.IpOrigen)
+                      .HasColumnName("ip_origen")
+                      .HasMaxLength(45);
+
+                entity.Property(e => e.DispositivoOrigen)
+                      .HasColumnName("dispositivo_origen");
+
+                entity.Property(e => e.EstadoSesion)
+                      .HasColumnName("estado_sesion")
+                      .HasDefaultValue(true);
+
+                entity.HasOne(e => e.TutorAspirante)
+                      .WithMany()
+                      .HasForeignKey(e => e.ClaveTutorAspirante)
+                      .HasConstraintName("fk_token_tutor");
+            });
+
+            // CargasDocumentos
+            modelBuilder.Entity<CargasDocumentosEntity>(entity =>
+            {
+                entity.ToTable("CargasDocumentos");
+                entity.HasKey(e => e.ClaveCarga);
+
+                entity.Property(e => e.ClaveCarga)
+                      .HasColumnName("claveCarga")
+                      .HasMaxLength(18)
+                      .HasDefaultValueSql("genera_clave_carga()")
+                      .ValueGeneratedOnAdd()
+                      .IsRequired();
+
+                entity.Property(e => e.ClaveExpediente)
+                      .HasColumnName("claveExpediente")
+                      .HasMaxLength(18)
+                      .IsRequired();
+
+                entity.HasIndex(e => e.ClaveExpediente).IsUnique();
+
+                entity.Property(e => e.ClaveUsuario)
+                      .HasColumnName("claveUsuario")
+                      .HasMaxLength(18)
+                      .IsRequired();
+
+                entity.Property(e => e.FechaCarga)
+                      .HasColumnName("fecha_carga")
+                      .HasDefaultValueSql("CURRENT_TIMESTAMP");
+
+                entity.Property(e => e.Observaciones)
+                      .HasColumnName("observaciones");
+
+                entity.Property(e => e.EstatusValidacion)
+                      .HasColumnName("estatus_validacion")
+                      .HasMaxLength(20)
+                      .HasDefaultValue("En Proceso");
+
+                entity.HasOne(e => e.Expediente)
+                      .WithMany()
+                      .HasForeignKey(e => e.ClaveExpediente)
+                      .HasConstraintName("fk_expediente_carga");
+
+                entity.HasOne(e => e.Usuario)
+                      .WithMany()
+                      .HasForeignKey(e => e.ClaveUsuario)
+                      .HasConstraintName("fk_usuario_carga");
+            });
+
+            // DetalleCarga
+            modelBuilder.Entity<DetalleCargaEntity>(entity =>
+            {
+                entity.ToTable("DetalleCarga");
+                entity.HasKey(e => new { e.ClaveCarga, e.ClaveDocumento });
+
+                entity.Property(e => e.ClaveCarga)
+                      .HasColumnName("claveCarga")
+                      .HasMaxLength(18)
+                      .IsRequired();
+
+                entity.Property(e => e.ClaveDocumento)
+                      .HasColumnName("claveDocumento")
+                      .HasMaxLength(18)
+                      .IsRequired();
+
+                entity.Property(e => e.ArchivoUrl)
+                      .HasColumnName("archivo_url")
+                      .HasMaxLength(255)
+                      .IsRequired();
+
+                entity.Property(e => e.FechaSubida)
+                      .HasColumnName("fecha_subida")
+                      .HasDefaultValueSql("CURRENT_TIMESTAMP");
+
+                entity.HasOne(e => e.CargaDocumento)
+                      .WithMany(c => c.DetalleCarga)
+                      .HasForeignKey(e => e.ClaveCarga)
+                      .HasConstraintName("fk_carga");
+
+                entity.HasOne(e => e.Documento)
+                      .WithMany()
+                      .HasForeignKey(e => e.ClaveDocumento)
+                      .HasConstraintName("fk_documento");
             });
         }
     }

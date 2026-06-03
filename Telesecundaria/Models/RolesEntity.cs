@@ -7,6 +7,7 @@
         public string Descripcion { get; set; }
 
         // Colecciones
+        public ICollection<PermisosEntity> Permisos { get; set; } = new List<PermisosEntity>();
         public ICollection<EmpleadoRolEntity> EmpleadoRoles { get; set; } = new List<EmpleadoRolEntity>();
     }
 }

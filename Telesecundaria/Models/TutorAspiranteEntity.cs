@@ -11,6 +11,7 @@
         public string Correo { get; set; }
         public string Parentesco { get; set; }
         public bool Estado { get; set; } = true;
+        public string Contrasena { get; set; } = "Temporal123";
 
         // Colecciones
         public ICollection<AspirantesEntity> Aspirantes { get; set; } = new List<AspirantesEntity>();

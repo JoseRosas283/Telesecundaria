@@ -20,5 +20,6 @@ namespace Telesecundaria.Models
         public ICollection<RevisionesEntity> Revisiones { get; set; } = new List<RevisionesEntity>();
         public ICollection<ReceptoresEntity> Receptores { get; set; } = new List<ReceptoresEntity>();
         public ICollection<EntregasEntity> Entregas { get; set; } = new List<EntregasEntity>();
+        public ICollection<LogueosEntity> Logueos { get; set; } = new List<LogueosEntity>();
     }
 }
