@@ -55,6 +55,12 @@ namespace Telesecundaria.Persistence
         public DbSet<CargasDocumentosEntity> CargasDocumentos { get; set; }
         public DbSet<DetalleCargaEntity> DetalleCarga { get; set; }
 
+        // DbSets nuevos
+        public DbSet<CiclosEscolaresEntity> CiclosEscolares { get; set; }
+        public DbSet<PeriodosEntity> Periodos { get; set; }
+        public DbSet<PagosEntity> Pagos { get; set; }
+        public DbSet<InscripcionesEntity> Inscripciones { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -1561,26 +1567,19 @@ namespace Telesecundaria.Persistence
 
                 entity.HasIndex(e => e.Matricula).IsUnique();
 
-                entity.Property(e => e.Grado)
-                      .HasColumnName("grado")
-                      .HasMaxLength(10)
-                      .IsRequired();
-
-                entity.Property(e => e.Grupo)
-                      .HasColumnName("grupo")
-                      .HasMaxLength(10)
-                      .IsRequired();
-
                 entity.Property(e => e.Estado)
                       .HasColumnName("estado")
-                      .HasMaxLength(10);
+                      .HasMaxLength(10)
+                      .HasDefaultValue("Activo");
 
-                entity.HasCheckConstraint("ck_alumno_estado", "estado IN ('Activo','Baja')");
+                entity.HasCheckConstraint("ck_alumno_estado", "estado IN ('Activo','Baja','Egresado')");
 
                 entity.Property(e => e.ClaveExpediente)
                       .HasColumnName("claveExpediente")
                       .HasMaxLength(18)
                       .IsRequired();
+
+                entity.HasIndex(e => e.ClaveExpediente).IsUnique();
 
                 entity.HasOne(e => e.Expediente)
                       .WithMany()
@@ -1623,6 +1622,10 @@ namespace Telesecundaria.Persistence
                       .HasColumnName("generacion")
                       .HasMaxLength(20)
                       .IsRequired();
+
+                entity.Property(e => e.Estado)      
+                      .HasColumnName("estado")
+                      .HasDefaultValue(true);
             });
 
             // TutoresAlumnos
@@ -1659,6 +1662,39 @@ namespace Telesecundaria.Persistence
                       .HasConstraintName("fk_rel_tutor");
             });
 
+            // CiclosEscolares
+            modelBuilder.Entity<CiclosEscolaresEntity>(entity =>
+            {
+                entity.ToTable("CiclosEscolares");
+                entity.HasKey(e => e.ClaveCiclo);
+
+                entity.Property(e => e.ClaveCiclo)
+                      .HasColumnName("claveCiclo")
+                      .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_ciclo()")
+                      .ValueGeneratedOnAdd()
+                      .IsRequired();
+
+                entity.Property(e => e.NombreCiclo)
+                      .HasColumnName("nombreCiclo")
+                      .HasMaxLength(100)
+                      .IsRequired();
+
+                entity.Property(e => e.FechaInicio)
+                      .HasColumnName("fechaInicio")
+                      .IsRequired();
+
+                entity.Property(e => e.FechaFin)
+                      .HasColumnName("fechaFin")
+                      .IsRequired();
+
+                entity.Property(e => e.Estatus)
+                      .HasColumnName("estatus")
+                      .HasDefaultValue(true);
+
+                entity.HasCheckConstraint("chk_fechas", "\"fechaFin\" > \"fechaInicio\"");
+            });
+
             // AsignacionGrupo
             modelBuilder.Entity<AsignacionGrupoEntity>(entity =>
             {
@@ -1680,14 +1716,27 @@ namespace Telesecundaria.Persistence
                       .HasMaxLength(18)
                       .IsRequired();
 
+                entity.Property(e => e.ClaveUsuario)
+                     .HasColumnName("claveUsuario")
+                     .HasMaxLength(18)
+                     .IsRequired();
+
+                entity.Property(e => e.ClaveCiclo)
+                      .HasColumnName("claveCiclo")
+                      .HasMaxLength(18)
+                      .IsRequired();
+
                 entity.Property(e => e.FechaAsignacion)
                       .HasColumnName("fecha_asignacion")
                       .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
-                entity.Property(e => e.CicloEscolar)
-                      .HasColumnName("ciclo_escolar")
+                entity.Property(e => e.Estatus)
+                      .HasColumnName("estatus")
                       .HasMaxLength(20)
-                      .IsRequired();
+                      .HasDefaultValue("ACTIVO");
+
+                entity.HasCheckConstraint("chk_estatus",
+                    "estatus IN ('ACTIVO','REPROBADO','APROBADO','BAJA')");
 
                 entity.HasOne(e => e.Alumno)
                       .WithMany(a => a.AsignacionGrupos)
@@ -1698,6 +1747,16 @@ namespace Telesecundaria.Persistence
                       .WithMany(g => g.AsignacionGrupos)
                       .HasForeignKey(e => e.ClaveGrupo)
                       .HasConstraintName("fk_asig_grupo");
+
+                entity.HasOne(e => e.Usuario)
+                      .WithMany()
+                      .HasForeignKey(e => e.ClaveUsuario)
+                      .HasConstraintName("fk_asig_usuario");
+
+                entity.HasOne(e => e.CicloEscolar)
+                      .WithMany()
+                      .HasForeignKey(e => e.ClaveCiclo)
+                      .HasConstraintName("fk_asig_ciclo");
             });
 
             // ValidacionDocumentos
@@ -2123,6 +2182,218 @@ namespace Telesecundaria.Persistence
                       .WithMany()
                       .HasForeignKey(e => e.ClaveDocumento)
                       .HasConstraintName("fk_documento");
+            });
+
+            // Periodos
+            modelBuilder.Entity<PeriodosEntity>(entity =>
+            {
+                entity.ToTable("Periodos");
+                entity.HasKey(e => e.ClavePeriodo);
+
+                entity.Property(e => e.ClavePeriodo)
+                      .HasColumnName("clavePeriodo")
+                      .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_periodo()")
+                      .ValueGeneratedOnAdd()
+                      .IsRequired();
+
+                entity.Property(e => e.ClaveCiclo)
+                      .HasColumnName("claveCiclo")
+                      .HasMaxLength(18)
+                      .IsRequired();
+
+                entity.HasIndex(e => e.ClaveCiclo).IsUnique();
+
+                entity.Property(e => e.NombrePeriodo)
+                      .HasColumnName("nombre_periodo")
+                      .HasMaxLength(100)
+                      .IsRequired();
+
+                entity.Property(e => e.FechaInicio)
+                      .HasColumnName("fecha_inicio")
+                      .IsRequired();
+
+                entity.Property(e => e.FechaFin)
+                      .HasColumnName("fecha_fin")
+                      .IsRequired();
+
+                entity.Property(e => e.EstadoPeriodo)
+                      .HasColumnName("estado_periodo")
+                      .HasDefaultValue(true);
+
+                entity.Property(e => e.FechaRegistro)
+                      .HasColumnName("fecha_registro")
+                      .HasDefaultValueSql("CURRENT_TIMESTAMP");
+
+                entity.HasOne(e => e.CicloEscolar)
+                      .WithMany()
+                      .HasForeignKey(e => e.ClaveCiclo)
+                      .HasConstraintName("fk_periodo_ciclo");
+            });
+
+            // Pagos
+            modelBuilder.Entity<PagosEntity>(entity =>
+            {
+                entity.ToTable("Pagos");
+                entity.HasKey(e => e.ClavePago);
+
+                entity.Property(e => e.ClavePago)
+                      .HasColumnName("clavePago")
+                      .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_pago()")
+                      .ValueGeneratedOnAdd()
+                      .IsRequired();
+
+                entity.Property(e => e.ClaveTutor)
+                      .HasColumnName("claveTutor")
+                      .HasMaxLength(18)
+                      .IsRequired();
+
+                entity.Property(e => e.ClaveUsuario)
+                      .HasColumnName("claveUsuario")
+                      .HasMaxLength(18)
+                      .IsRequired();
+
+                entity.Property(e => e.ClaveCiclo)
+                      .HasColumnName("claveCiclo")
+                      .HasMaxLength(18)
+                      .IsRequired();
+
+                entity.Property(e => e.Monto)
+                      .HasColumnName("monto")
+                      .HasPrecision(10, 2)
+                      .IsRequired();
+
+                entity.Property(e => e.FechaPago)
+                      .HasColumnName("fecha_pago")
+                      .HasDefaultValueSql("CURRENT_TIMESTAMP");
+
+                entity.Property(e => e.MetodoPago)
+                      .HasColumnName("metodo_pago")
+                      .HasMaxLength(30)
+                      .IsRequired();
+
+                entity.Property(e => e.ComprobantePago)
+                      .HasColumnName("comprobante_pago")
+                      .HasMaxLength(100);
+
+                entity.Property(e => e.Referencia)
+                      .HasColumnName("referencia");
+
+                entity.Property(e => e.EstadoPago)
+                      .HasColumnName("estado_pago")
+                      .HasDefaultValue(true);
+
+                entity.HasCheckConstraint("chk_metodo_pago",
+                    "metodo_pago IN ('Efectivo','Transferencia','Deposito')");
+
+                entity.HasOne(e => e.Tutor)
+                      .WithMany()
+                      .HasForeignKey(e => e.ClaveTutor)
+                      .HasConstraintName("fk_pago_tutor");
+
+                entity.HasOne(e => e.Usuario)
+                      .WithMany()
+                      .HasForeignKey(e => e.ClaveUsuario)
+                      .HasConstraintName("fk_pago_usuario");
+
+                entity.HasOne(e => e.CicloEscolar)
+                      .WithMany()
+                      .HasForeignKey(e => e.ClaveCiclo)
+                      .HasConstraintName("fk_pago_ciclo");
+            });
+
+            // Inscripciones
+            modelBuilder.Entity<InscripcionesEntity>(entity =>
+            {
+                entity.ToTable("Inscripciones");
+                entity.HasKey(e => e.ClaveInscripcion);
+
+                entity.Property(e => e.ClaveInscripcion)
+                      .HasColumnName("claveInscripcion")
+                      .HasMaxLength(18)
+                      .HasDefaultValueSql("generar_clave_inscripcion()")
+                      .ValueGeneratedOnAdd()
+                      .IsRequired();
+
+                entity.Property(e => e.ClaveAlumno)
+                      .HasColumnName("claveAlumno")
+                      .HasMaxLength(18)
+                      .IsRequired();
+
+                entity.Property(e => e.ClaveCiclo)
+                      .HasColumnName("claveCiclo")
+                      .HasMaxLength(18)
+                      .IsRequired();
+
+                entity.Property(e => e.ClavePeriodo)
+                      .HasColumnName("clavePeriodo")
+                      .HasMaxLength(18)
+                      .IsRequired();
+
+                entity.Property(e => e.ClaveGrupo)
+                      .HasColumnName("claveGrupo")
+                      .HasMaxLength(18);
+
+                entity.Property(e => e.ClaveUsuario)
+                      .HasColumnName("claveUsuario")
+                      .HasMaxLength(18)
+                      .IsRequired();
+
+                entity.Property(e => e.ClavePago)
+                      .HasColumnName("clavePago")
+                      .HasMaxLength(18);
+
+                entity.Property(e => e.FechaInscripcion)
+                      .HasColumnName("fecha_inscripcion")
+                      .HasDefaultValueSql("CURRENT_TIMESTAMP");
+
+                entity.Property(e => e.EstatusInscripcion)
+                      .HasColumnName("estatus_inscripcion")
+                      .HasMaxLength(30)
+                      .HasDefaultValue("PENDIENTE");
+
+                entity.Property(e => e.Observaciones)
+                      .HasColumnName("observaciones");
+
+                entity.HasCheckConstraint("chk_estatus_ins",
+                    "estatus_inscripcion IN ('INSCRITO','CANCELADA')");
+
+                entity.HasIndex(e => new { e.ClaveAlumno, e.ClavePeriodo })
+                      .IsUnique()
+                      .HasDatabaseName("uk_ins_alumno_periodo");
+
+                entity.HasOne(e => e.Alumno)
+                      .WithMany()
+                      .HasForeignKey(e => e.ClaveAlumno)
+                      .HasConstraintName("fk_ins_alumno");
+
+                entity.HasOne(e => e.CicloEscolar)
+                      .WithMany()
+                      .HasForeignKey(e => e.ClaveCiclo)
+                      .HasConstraintName("fk_ins_ciclo");
+
+                entity.HasOne(e => e.Periodo)
+                      .WithMany()
+                      .HasForeignKey(e => e.ClavePeriodo)
+                      .HasConstraintName("fk_ins_periodo");
+
+                entity.HasOne(e => e.Grupo)
+                      .WithMany()
+                      .HasForeignKey(e => e.ClaveGrupo)
+                      .HasConstraintName("fk_ins_grupo")
+                      .IsRequired(false);
+
+                entity.HasOne(e => e.Usuario)
+                      .WithMany()
+                      .HasForeignKey(e => e.ClaveUsuario)
+                      .HasConstraintName("fk_ins_usuario");
+
+                entity.HasOne(e => e.Pago)
+                      .WithMany()
+                      .HasForeignKey(e => e.ClavePago)
+                      .HasConstraintName("fk_ins_pago")
+                      .IsRequired(false);
             });
         }
     }
