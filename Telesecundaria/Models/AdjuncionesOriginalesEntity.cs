@@ -7,7 +7,7 @@ namespace Telesecundaria.Models
         public string ClaveAdjOriginal { get; set; }
         public string ClaveEntrega { get; set; }
         public string ClaveUsuario { get; set; }
-        public DateTime FechaCarga { get; set; }
+        public DateTime? FechaCarga { get; set; }
 
         // Navegación
         [JsonIgnore]

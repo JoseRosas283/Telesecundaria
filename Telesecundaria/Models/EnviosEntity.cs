@@ -11,7 +11,7 @@ namespace Telesecundaria.Models
         public string Estatus { get; set; } = "Pendiente";
         public bool ConfirmacionLectura { get; set; } = false;
         public DateTime? FechaEnvio { get; set; }
-        public string ErrorLog { get; set; }
+        public string? ErrorLog { get; set; }
 
         // Navegación
         [JsonIgnore]

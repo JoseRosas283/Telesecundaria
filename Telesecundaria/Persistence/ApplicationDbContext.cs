@@ -1105,7 +1105,8 @@ namespace Telesecundaria.Persistence
                       .HasColumnName("fecha_envio");
 
                 entity.Property(e => e.ErrorLog)
-                      .HasColumnName("error_log");
+                      .HasColumnName("error_log")
+                      .IsRequired(false);
 
                 entity.HasOne(e => e.Notificacion)
                       .WithMany(n => n.Envios)
@@ -1197,7 +1198,8 @@ namespace Telesecundaria.Persistence
                     "estado_cita IN ('Programada','Asistió','No Asistió')");
 
                 entity.Property(e => e.Observaciones)
-                      .HasColumnName("observaciones");
+                      .HasColumnName("observaciones")
+                      .IsRequired(false);
 
                 entity.Property(e => e.CreateAt)
                       .HasColumnName("create_at")
@@ -1253,7 +1255,8 @@ namespace Telesecundaria.Persistence
                     "estatus_doc IN ('Aceptado','Rechazado')");
 
                 entity.Property(e => e.MotivoRechazo)
-                      .HasColumnName("motivo_rechazo");
+                      .HasColumnName("motivo_rechazo")
+                      .IsRequired(false);
 
                 entity.HasOne(e => e.Revision)
                       .WithMany(r => r.DetalleRevisiones)

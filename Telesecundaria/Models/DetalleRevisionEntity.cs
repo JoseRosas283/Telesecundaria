@@ -7,7 +7,7 @@ namespace Telesecundaria.Models
         public string ClaveRevision { get; set; }
         public string ClaveDocAspirante { get; set; }
         public string EstatusDoc { get; set; }
-        public string MotivoRechazo { get; set; }
+        public string? MotivoRechazo { get; set; }
 
         // Navegación
         [JsonIgnore]
