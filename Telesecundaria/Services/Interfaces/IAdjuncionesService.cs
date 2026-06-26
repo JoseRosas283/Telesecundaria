@@ -7,5 +7,8 @@ namespace Telesecundaria.Services.Interfaces
     public interface IAdjuncionesService
     {
         Task<AdjuncionResponseDTO> RegistrarAdjuncionAsync(AdjuncionRequestDTO dto);
+        Task<DocumentoAdjuntadoDTO> RegistrarDocumentoTempAsync(DocumentoTempRequestDTO dto);
+        Task<EstadoDocumentosResponseDTO> ObtenerEstadoDocumentosAsync(string claveAspirante);
+        Task<AdjuncionResponseDTO> FinalizarAdjuncionAsync(FinalizarAdjuncionRequestDTO dto);
     }
 }
