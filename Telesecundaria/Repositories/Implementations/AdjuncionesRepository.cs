@@ -153,5 +153,67 @@ namespace Telesecundaria.Repositories.Implementations
             }
             return lista;
         }
+
+        public async Task<List<DocumentosAspiranteEntity>> ObtenerDocumentosPorAspiranteAsync(string claveAspirante)
+        {
+            var conn = (NpgsqlConnection)_context.Database.GetDbConnection();
+            if (conn.State != System.Data.ConnectionState.Open)
+                await conn.OpenAsync();
+
+            using var query = new NpgsqlCommand(
+                @"SELECT d.""claveDocAspirante"", d.ruta_archivo, d.""claveTipoDocumento"", d.""claveAspirante"", td.nombre_documento
+                  FROM ""DocumentosAspirante"" d
+                  JOIN ""TipoDocumentos"" td ON td.""claveTipoDocumento"" = d.""claveTipoDocumento""
+                  WHERE d.""claveAspirante"" = @aspirante", conn);
+
+            query.Parameters.AddWithValue("aspirante", claveAspirante);
+
+            var lista = new List<DocumentosAspiranteEntity>();
+            using var reader = await query.ExecuteReaderAsync();
+            while (await reader.ReadAsync())
+            {
+                lista.Add(new DocumentosAspiranteEntity
+                {
+                    ClaveDocAspirante = reader.GetString(0),
+                    RutaArchivo = reader.GetString(1),
+                    ClaveTipoDocumento = reader.GetString(4), // nombre_documento legible
+                    ClaveAspirante = reader.GetString(3)
+                });
+            }
+            return lista;
+        }
+
+        public async Task<List<DocumentosAspiranteEntity>> ObtenerDocumentosSinDetalleAsync(string claveAspirante)
+        {
+            var conn = (NpgsqlConnection)_context.Database.GetDbConnection();
+            if (conn.State != System.Data.ConnectionState.Open)
+                await conn.OpenAsync();
+
+            using var query = new NpgsqlCommand(
+                @"SELECT d.""claveDocAspirante"", d.ruta_archivo, d.""claveTipoDocumento"", d.""claveAspirante"", td.nombre_documento
+                  FROM ""DocumentosAspirante"" d
+                  JOIN ""TipoDocumentos"" td ON td.""claveTipoDocumento"" = d.""claveTipoDocumento""
+                  WHERE d.""claveAspirante"" = @aspirante
+                    AND NOT EXISTS (
+                        SELECT 1 FROM ""DetalleAdjuncion"" da 
+                        WHERE da.""claveDocAspirante"" = d.""claveDocAspirante""
+                    )", conn);
+
+            query.Parameters.AddWithValue("aspirante", claveAspirante);
+
+            var lista = new List<DocumentosAspiranteEntity>();
+            using var reader = await query.ExecuteReaderAsync();
+            while (await reader.ReadAsync())
+            {
+                lista.Add(new DocumentosAspiranteEntity
+                {
+                    ClaveDocAspirante = reader.GetString(0),
+                    RutaArchivo = reader.GetString(1),
+                    ClaveTipoDocumento = reader.GetString(4), // nombre_documento legible
+                    ClaveAspirante = reader.GetString(3)
+                });
+            }
+            return lista;
+        }
     }
 }

@@ -9,5 +9,8 @@ namespace Telesecundaria.Repositories.Interfaces
         Task InsertarDetalleAdjuncionAsync(string claveAdjuncion, string claveDocAspirante);
         Task<AdjuncionesEntity?> ObtenerAdjuncionAsync(string claveAdjuncion);
         Task<List<DocumentosAspiranteEntity>> ObtenerDocumentosAdjuncionAsync(string claveAdjuncion);
+
+        Task<List<DocumentosAspiranteEntity>> ObtenerDocumentosPorAspiranteAsync(string claveAspirante);
+        Task<List<DocumentosAspiranteEntity>> ObtenerDocumentosSinDetalleAsync(string claveAspirante);
     }
 }
