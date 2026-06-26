@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Telesecundaria.Persistence;
@@ -11,9 +12,11 @@ using Telesecundaria.Persistence;
 namespace Telesecundaria.Persistence.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260614194839_AumentarTamanoNombreCiclo")]
+    partial class AumentarTamanoNombreCiclo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -96,7 +99,7 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasColumnType("character varying(18)")
                         .HasColumnName("claveUsuario");
 
-                    b.Property<DateTime?>("FechaCarga")
+                    b.Property<DateTime>("FechaCarga")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("fecha_carga")
@@ -453,6 +456,7 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasColumnName("hora_cita");
 
                     b.Property<string>("Observaciones")
+                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("observaciones");
 
@@ -679,6 +683,7 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasColumnName("estatus_doc");
 
                     b.Property<string>("MotivoRechazo")
+                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("motivo_rechazo");
 
@@ -1015,6 +1020,7 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasColumnName("destino");
 
                     b.Property<string>("ErrorLog")
+                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("error_log");
 

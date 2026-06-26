@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Telesecundaria.Persistence;
@@ -11,9 +12,11 @@ using Telesecundaria.Persistence;
 namespace Telesecundaria.Persistence.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260528205505_AgregarFuncionGrupo")]
+    partial class AgregarFuncionGrupo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -96,7 +99,7 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasColumnType("character varying(18)")
                         .HasColumnName("claveUsuario");
 
-                    b.Property<DateTime?>("FechaCarga")
+                    b.Property<DateTime>("FechaCarga")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("fecha_carga")
@@ -128,29 +131,37 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasColumnName("claveExpediente");
 
                     b.Property<string>("Estado")
-                        .ValueGeneratedOnAdd()
+                        .IsRequired()
                         .HasMaxLength(10)
                         .HasColumnType("character varying(10)")
-                        .HasDefaultValue("Activo")
                         .HasColumnName("estado");
 
+                    b.Property<string>("Grado")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("character varying(10)")
+                        .HasColumnName("grado");
+
+                    b.Property<string>("Grupo")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("character varying(10)")
+                        .HasColumnName("grupo");
+
                     b.Property<string>("Matricula")
+                        .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("character varying(20)")
                         .HasColumnName("matricula");
 
                     b.HasKey("ClaveAlumno");
 
-                    b.HasIndex("ClaveExpediente")
-                        .IsUnique();
+                    b.HasIndex("ClaveExpediente");
 
                     b.HasIndex("Matricula")
                         .IsUnique();
 
-                    b.ToTable("Alumnos", null, t =>
-                        {
-                            t.HasCheckConstraint("ck_alumno_estado", "estado IN ('Activo','Baja','Egresado')");
-                        });
+                    b.ToTable("Alumnos", (string)null);
                 });
 
             modelBuilder.Entity("Telesecundaria.Models.AsignacionGrupoEntity", b =>
@@ -160,17 +171,17 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasColumnType("character varying(18)")
                         .HasColumnName("claveAsignacion");
 
+                    b.Property<string>("CicloEscolar")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)")
+                        .HasColumnName("ciclo_escolar");
+
                     b.Property<string>("ClaveAlumno")
                         .IsRequired()
                         .HasMaxLength(18)
                         .HasColumnType("character varying(18)")
                         .HasColumnName("claveAlumno");
-
-                    b.Property<string>("ClaveCiclo")
-                        .IsRequired()
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveCiclo");
 
                     b.Property<string>("ClaveGrupo")
                         .IsRequired()
@@ -178,20 +189,7 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasColumnType("character varying(18)")
                         .HasColumnName("claveGrupo");
 
-                    b.Property<string>("ClaveUsuario")
-                        .IsRequired()
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveUsuario");
-
-                    b.Property<string>("Estatus")
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(20)
-                        .HasColumnType("character varying(20)")
-                        .HasDefaultValue("ACTIVO")
-                        .HasColumnName("estatus");
-
-                    b.Property<DateTime?>("FechaAsignacion")
+                    b.Property<DateTime>("FechaAsignacion")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("fecha_asignacion")
@@ -201,16 +199,9 @@ namespace Telesecundaria.Persistence.Migrations
 
                     b.HasIndex("ClaveAlumno");
 
-                    b.HasIndex("ClaveCiclo");
-
                     b.HasIndex("ClaveGrupo");
 
-                    b.HasIndex("ClaveUsuario");
-
-                    b.ToTable("AsignacionGrupo", null, t =>
-                        {
-                            t.HasCheckConstraint("chk_estatus", "estatus IN ('ACTIVO','REPROBADO','APROBADO','BAJA')");
-                        });
+                    b.ToTable("AsignacionGrupo", (string)null);
                 });
 
             modelBuilder.Entity("Telesecundaria.Models.AspirantesEntity", b =>
@@ -223,6 +214,7 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasDefaultValueSql("generar_clave_aspirante()");
 
                     b.Property<string>("ApellidoMaterno")
+                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("character varying(50)")
                         .HasColumnName("apellido_materno");
@@ -252,6 +244,7 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasColumnName("curp");
 
                     b.Property<string>("CurpHermano")
+                        .IsRequired()
                         .HasMaxLength(18)
                         .HasColumnType("character varying(18)")
                         .HasColumnName("curp_hermano");
@@ -293,6 +286,7 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasColumnName("nombre");
 
                     b.Property<string>("NombreEnfermedad")
+                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("character varying(100)")
                         .HasColumnName("nombre_enfermedad");
@@ -320,92 +314,6 @@ namespace Telesecundaria.Persistence.Migrations
                     b.ToTable("Aspirantes", null, t =>
                         {
                             t.HasCheckConstraint("ck_estatus_aspirante", "estatus_aspirante IN ('En proceso','Aceptado','Rechazado')");
-                        });
-                });
-
-            modelBuilder.Entity("Telesecundaria.Models.CargasDocumentosEntity", b =>
-                {
-                    b.Property<string>("ClaveCarga")
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveCarga")
-                        .HasDefaultValueSql("genera_clave_carga()");
-
-                    b.Property<string>("ClaveExpediente")
-                        .IsRequired()
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveExpediente");
-
-                    b.Property<string>("ClaveUsuario")
-                        .IsRequired()
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveUsuario");
-
-                    b.Property<string>("EstatusValidacion")
-                        .IsRequired()
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(20)
-                        .HasColumnType("character varying(20)")
-                        .HasDefaultValue("En Proceso")
-                        .HasColumnName("estatus_validacion");
-
-                    b.Property<DateTime>("FechaCarga")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("fecha_carga")
-                        .HasDefaultValueSql("CURRENT_TIMESTAMP");
-
-                    b.Property<string>("Observaciones")
-                        .HasColumnType("text")
-                        .HasColumnName("observaciones");
-
-                    b.HasKey("ClaveCarga");
-
-                    b.HasIndex("ClaveExpediente")
-                        .IsUnique();
-
-                    b.HasIndex("ClaveUsuario");
-
-                    b.ToTable("CargasDocumentos", (string)null);
-                });
-
-            modelBuilder.Entity("Telesecundaria.Models.CiclosEscolaresEntity", b =>
-                {
-                    b.Property<string>("ClaveCiclo")
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveCiclo")
-                        .HasDefaultValueSql("generar_clave_ciclo()");
-
-                    b.Property<bool?>("Estatus")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("boolean")
-                        .HasDefaultValue(true)
-                        .HasColumnName("estatus");
-
-                    b.Property<DateOnly>("FechaFin")
-                        .HasColumnType("date")
-                        .HasColumnName("fechaFin");
-
-                    b.Property<DateOnly>("FechaInicio")
-                        .HasColumnType("date")
-                        .HasColumnName("fechaInicio");
-
-                    b.Property<string>("NombreCiclo")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)")
-                        .HasColumnName("nombreCiclo");
-
-                    b.HasKey("ClaveCiclo");
-
-                    b.ToTable("CiclosEscolares", null, t =>
-                        {
-                            t.HasCheckConstraint("chk_fechas", "\"fechaFin\" > \"fechaInicio\"");
                         });
                 });
 
@@ -453,6 +361,7 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasColumnName("hora_cita");
 
                     b.Property<string>("Observaciones")
+                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("observaciones");
 
@@ -585,13 +494,14 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasColumnType("character varying(20)")
                         .HasColumnName("estatus_documento");
 
-                    b.Property<DateTime?>("FechaEvaluacion")
+                    b.Property<DateTime>("FechaEvaluacion")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("fecha_evaluacion")
                         .HasDefaultValueSql("CURRENT_DATE");
 
                     b.Property<string>("MotivoRechazo")
+                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("motivo_rechazo");
 
@@ -629,37 +539,6 @@ namespace Telesecundaria.Persistence.Migrations
                     b.ToTable("DetalleAdjuncionOriginal", (string)null);
                 });
 
-            modelBuilder.Entity("Telesecundaria.Models.DetalleCargaEntity", b =>
-                {
-                    b.Property<string>("ClaveCarga")
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveCarga");
-
-                    b.Property<string>("ClaveDocumento")
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveDocumento");
-
-                    b.Property<string>("ArchivoUrl")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("character varying(255)")
-                        .HasColumnName("archivo_url");
-
-                    b.Property<DateTime>("FechaSubida")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("fecha_subida")
-                        .HasDefaultValueSql("CURRENT_TIMESTAMP");
-
-                    b.HasKey("ClaveCarga", "ClaveDocumento");
-
-                    b.HasIndex("ClaveDocumento");
-
-                    b.ToTable("DetalleCarga", (string)null);
-                });
-
             modelBuilder.Entity("Telesecundaria.Models.DetalleRevisionEntity", b =>
                 {
                     b.Property<string>("ClaveRevision")
@@ -679,6 +558,7 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasColumnName("estatus_doc");
 
                     b.Property<string>("MotivoRechazo")
+                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("motivo_rechazo");
 
@@ -934,12 +814,6 @@ namespace Telesecundaria.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("character varying(18)");
 
-                    b.Property<string>("ClaveAspirante")
-                        .IsRequired()
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveAspirante");
-
                     b.Property<string>("ClaveCita")
                         .IsRequired()
                         .HasMaxLength(18)
@@ -973,9 +847,6 @@ namespace Telesecundaria.Persistence.Migrations
                     b.HasKey("ClaveEntrega");
 
                     b.HasIndex("AdjuncionOriginalClaveAdjOriginal");
-
-                    b.HasIndex("ClaveAspirante")
-                        .IsUnique();
 
                     b.HasIndex("ClaveCita")
                         .IsUnique();
@@ -1015,6 +886,7 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasColumnName("destino");
 
                     b.Property<string>("ErrorLog")
+                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("error_log");
 
@@ -1199,12 +1071,6 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasColumnType("integer")
                         .HasColumnName("capacidad_maxima");
 
-                    b.Property<bool?>("Estado")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("boolean")
-                        .HasDefaultValue(true)
-                        .HasColumnName("estado");
-
                     b.Property<string>("Generacion")
                         .IsRequired()
                         .HasMaxLength(20)
@@ -1231,187 +1097,6 @@ namespace Telesecundaria.Persistence.Migrations
 
                             t.HasCheckConstraint("ck_seccion_grupo", "seccion IN ('A','B')");
                         });
-                });
-
-            modelBuilder.Entity("Telesecundaria.Models.InscripcionesEntity", b =>
-                {
-                    b.Property<string>("ClaveInscripcion")
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveInscripcion")
-                        .HasDefaultValueSql("generar_clave_inscripcion()");
-
-                    b.Property<string>("ClaveAlumno")
-                        .IsRequired()
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveAlumno");
-
-                    b.Property<string>("ClaveCiclo")
-                        .IsRequired()
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveCiclo");
-
-                    b.Property<string>("ClaveGrupo")
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveGrupo");
-
-                    b.Property<string>("ClavePago")
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("clavePago");
-
-                    b.Property<string>("ClavePeriodo")
-                        .IsRequired()
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("clavePeriodo");
-
-                    b.Property<string>("ClaveUsuario")
-                        .IsRequired()
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveUsuario");
-
-                    b.Property<string>("EstatusInscripcion")
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(30)
-                        .HasColumnType("character varying(30)")
-                        .HasDefaultValue("PENDIENTE")
-                        .HasColumnName("estatus_inscripcion");
-
-                    b.Property<DateTime?>("FechaInscripcion")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("fecha_inscripcion")
-                        .HasDefaultValueSql("CURRENT_TIMESTAMP");
-
-                    b.Property<string>("Observaciones")
-                        .HasColumnType("text")
-                        .HasColumnName("observaciones");
-
-                    b.HasKey("ClaveInscripcion");
-
-                    b.HasIndex("ClaveCiclo");
-
-                    b.HasIndex("ClaveGrupo");
-
-                    b.HasIndex("ClavePago");
-
-                    b.HasIndex("ClavePeriodo");
-
-                    b.HasIndex("ClaveUsuario");
-
-                    b.HasIndex("ClaveAlumno", "ClavePeriodo")
-                        .IsUnique()
-                        .HasDatabaseName("uk_ins_alumno_periodo");
-
-                    b.ToTable("Inscripciones", null, t =>
-                        {
-                            t.HasCheckConstraint("chk_estatus_ins", "estatus_inscripcion IN ('INSCRITO','CANCELADA')");
-                        });
-                });
-
-            modelBuilder.Entity("Telesecundaria.Models.LogueosEntity", b =>
-                {
-                    b.Property<string>("ClaveLogueo")
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveLogueo")
-                        .HasDefaultValueSql("generar_clave_logueo()");
-
-                    b.Property<string>("AgenteUsuario")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("text")
-                        .HasDefaultValue("Desconocido")
-                        .HasColumnName("agente_usuario");
-
-                    b.Property<string>("ClaveUsuario")
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveUsuario");
-
-                    b.Property<string>("DireccionIp")
-                        .IsRequired()
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(45)
-                        .HasColumnType("character varying(45)")
-                        .HasDefaultValue("0.0.0.0")
-                        .HasColumnName("direccion_ip");
-
-                    b.Property<string>("EstatusIntento")
-                        .IsRequired()
-                        .HasMaxLength(25)
-                        .HasColumnType("character varying(25)")
-                        .HasColumnName("estatus_intento");
-
-                    b.Property<DateTime>("FechaAcceso")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("fecha_acceso")
-                        .HasDefaultValueSql("CURRENT_TIMESTAMP");
-
-                    b.Property<DateTime?>("FechaCierre")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("fecha_cierre");
-
-                    b.HasKey("ClaveLogueo");
-
-                    b.HasIndex("ClaveUsuario");
-
-                    b.ToTable("Logueos", null, t =>
-                        {
-                            t.HasCheckConstraint("chk_estatus_intento", "estatus_intento IN ('Exitoso','Contraseña Incorrecta','Usuario Suspendido','Usuario Inexistente','Sesión Finalizada')");
-                        });
-                });
-
-            modelBuilder.Entity("Telesecundaria.Models.ModulosEntity", b =>
-                {
-                    b.Property<string>("ClaveModulo")
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveModulo")
-                        .HasDefaultValueSql("generar_clave_modulo()");
-
-                    b.Property<string>("ClaveModuloPadre")
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveModuloPadre");
-
-                    b.Property<string>("Descripcion")
-                        .HasColumnType("text")
-                        .HasColumnName("descripcion");
-
-                    b.Property<bool>("EstadoModulo")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("boolean")
-                        .HasDefaultValue(true)
-                        .HasColumnName("estado_modulo");
-
-                    b.Property<string>("NombreModulo")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasColumnName("nombre_modulo");
-
-                    b.Property<string>("UrlModulo")
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)")
-                        .HasColumnName("url_modulo");
-
-                    b.HasKey("ClaveModulo");
-
-                    b.HasIndex("ClaveModuloPadre");
-
-                    b.HasIndex("NombreModulo")
-                        .IsUnique();
-
-                    b.ToTable("Modulos", (string)null);
                 });
 
             modelBuilder.Entity("Telesecundaria.Models.NotificacionesEntity", b =>
@@ -1478,177 +1163,6 @@ namespace Telesecundaria.Persistence.Migrations
                     b.ToTable("Notificaciones", (string)null);
                 });
 
-            modelBuilder.Entity("Telesecundaria.Models.PagosEntity", b =>
-                {
-                    b.Property<string>("ClavePago")
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("clavePago")
-                        .HasDefaultValueSql("generar_clave_pago()");
-
-                    b.Property<string>("ClaveCiclo")
-                        .IsRequired()
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveCiclo");
-
-                    b.Property<string>("ClaveTutor")
-                        .IsRequired()
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveTutor");
-
-                    b.Property<string>("ClaveUsuario")
-                        .IsRequired()
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveUsuario");
-
-                    b.Property<string>("ComprobantePago")
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)")
-                        .HasColumnName("comprobante_pago");
-
-                    b.Property<bool?>("EstadoPago")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("boolean")
-                        .HasDefaultValue(true)
-                        .HasColumnName("estado_pago");
-
-                    b.Property<DateTime?>("FechaPago")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("fecha_pago")
-                        .HasDefaultValueSql("CURRENT_TIMESTAMP");
-
-                    b.Property<string>("MetodoPago")
-                        .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("character varying(30)")
-                        .HasColumnName("metodo_pago");
-
-                    b.Property<decimal>("Monto")
-                        .HasPrecision(10, 2)
-                        .HasColumnType("numeric(10,2)")
-                        .HasColumnName("monto");
-
-                    b.Property<string>("Referencia")
-                        .HasColumnType("text")
-                        .HasColumnName("referencia");
-
-                    b.HasKey("ClavePago");
-
-                    b.HasIndex("ClaveCiclo");
-
-                    b.HasIndex("ClaveTutor");
-
-                    b.HasIndex("ClaveUsuario");
-
-                    b.ToTable("Pagos", null, t =>
-                        {
-                            t.HasCheckConstraint("chk_metodo_pago", "metodo_pago IN ('Efectivo','Transferencia','Deposito')");
-                        });
-                });
-
-            modelBuilder.Entity("Telesecundaria.Models.PeriodosEntity", b =>
-                {
-                    b.Property<string>("ClavePeriodo")
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("clavePeriodo")
-                        .HasDefaultValueSql("generar_clave_periodo()");
-
-                    b.Property<string>("ClaveCiclo")
-                        .IsRequired()
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveCiclo");
-
-                    b.Property<bool?>("EstadoPeriodo")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("boolean")
-                        .HasDefaultValue(true)
-                        .HasColumnName("estado_periodo");
-
-                    b.Property<DateOnly>("FechaFin")
-                        .HasColumnType("date")
-                        .HasColumnName("fecha_fin");
-
-                    b.Property<DateOnly>("FechaInicio")
-                        .HasColumnType("date")
-                        .HasColumnName("fecha_inicio");
-
-                    b.Property<DateTime?>("FechaRegistro")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("fecha_registro")
-                        .HasDefaultValueSql("CURRENT_TIMESTAMP");
-
-                    b.Property<string>("NombrePeriodo")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)")
-                        .HasColumnName("nombre_periodo");
-
-                    b.HasKey("ClavePeriodo");
-
-                    b.HasIndex("ClaveCiclo")
-                        .IsUnique();
-
-                    b.ToTable("Periodos", (string)null);
-                });
-
-            modelBuilder.Entity("Telesecundaria.Models.PermisosEntity", b =>
-                {
-                    b.Property<string>("ClaveRol")
-                        .HasMaxLength(20)
-                        .HasColumnType("character varying(20)")
-                        .HasColumnName("claveRol");
-
-                    b.Property<string>("ClaveModulo")
-                        .HasMaxLength(20)
-                        .HasColumnType("character varying(20)")
-                        .HasColumnName("claveModulo");
-
-                    b.Property<DateTime>("FechaAsignacion")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("fecha_asignacion")
-                        .HasDefaultValueSql("CURRENT_TIMESTAMP");
-
-                    b.Property<bool>("PuedeCrear")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("boolean")
-                        .HasDefaultValue(false)
-                        .HasColumnName("puede_crear");
-
-                    b.Property<bool>("PuedeEditar")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("boolean")
-                        .HasDefaultValue(false)
-                        .HasColumnName("puede_editar");
-
-                    b.Property<bool>("PuedeEliminar")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("boolean")
-                        .HasDefaultValue(false)
-                        .HasColumnName("puede_eliminar");
-
-                    b.Property<bool>("PuedeVer")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("boolean")
-                        .HasDefaultValue(true)
-                        .HasColumnName("puede_ver");
-
-                    b.HasKey("ClaveRol", "ClaveModulo");
-
-                    b.HasIndex("ClaveModulo");
-
-                    b.ToTable("Permisos", (string)null);
-                });
-
             modelBuilder.Entity("Telesecundaria.Models.PublicacionesEntity", b =>
                 {
                     b.Property<string>("ClavePublicacion")
@@ -1669,20 +1183,10 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasColumnType("character varying(18)")
                         .HasColumnName("claveConvocatoria");
 
-                    b.Property<string>("ClaveImagenPrincipal")
+                    b.Property<string>("ClaveImagen")
                         .HasMaxLength(18)
                         .HasColumnType("character varying(18)")
-                        .HasColumnName("claveImagenPrincipal");
-
-                    b.Property<string>("ClaveImagenSecundaria")
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveImagenSecundaria");
-
-                    b.Property<string>("ClaveImagenTercera")
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveImagenTercera");
+                        .HasColumnName("claveImagen");
 
                     b.Property<string>("ClaveUsuario")
                         .IsRequired()
@@ -1739,17 +1243,13 @@ namespace Telesecundaria.Persistence.Migrations
 
                     b.HasIndex("ClaveConvocatoria");
 
-                    b.HasIndex("ClaveImagenPrincipal");
-
-                    b.HasIndex("ClaveImagenSecundaria");
-
-                    b.HasIndex("ClaveImagenTercera");
+                    b.HasIndex("ClaveImagen");
 
                     b.HasIndex("ClaveUsuario");
 
                     b.ToTable("Publicaciones", null, t =>
                         {
-                            t.HasCheckConstraint("ck_categoria_pub", "categoria IN ('Eventos Culturales','Noticia','Aviso','Convocatorias','Galería')");
+                            t.HasCheckConstraint("ck_categoria_pub", "categoria IN ('Eventos Culturales','Noticia','Aviso','Convocatorias')");
                         });
                 });
 
@@ -1824,12 +1324,6 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasColumnType("character varying(18)")
                         .HasColumnName("claveTipoDocumento");
 
-                    b.Property<bool>("EstadoRequisito")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("boolean")
-                        .HasDefaultValue(true)
-                        .HasColumnName("estado_requisito");
-
                     b.Property<string>("EtapaProceso")
                         .IsRequired()
                         .HasMaxLength(20)
@@ -1841,6 +1335,12 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("character varying(20)")
                         .HasColumnName("formato_exigido");
+
+                    b.Property<bool>("Obligatorio")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("boolean")
+                        .HasDefaultValue(true)
+                        .HasColumnName("obligatorio");
 
                     b.HasKey("ClaveRequisito");
 
@@ -2013,12 +1513,6 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasColumnType("text")
                         .HasColumnName("descripcion");
 
-                    b.Property<bool>("Estado")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("boolean")
-                        .HasDefaultValue(true)
-                        .HasColumnName("estado");
-
                     b.Property<string>("NombreDocumento")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -2076,58 +1570,6 @@ namespace Telesecundaria.Persistence.Migrations
                         });
                 });
 
-            modelBuilder.Entity("Telesecundaria.Models.TokenConvocatoriasEntity", b =>
-                {
-                    b.Property<string>("ClaveTokenConvocatoria")
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(20)
-                        .HasColumnType("character varying(20)")
-                        .HasColumnName("claveTokenConvocatoria")
-                        .HasDefaultValueSql("generar_token_convocatoria()");
-
-                    b.Property<string>("ClaveTutorAspirante")
-                        .IsRequired()
-                        .HasMaxLength(18)
-                        .HasColumnType("character varying(18)")
-                        .HasColumnName("claveTutorAspirante");
-
-                    b.Property<string>("DispositivoOrigen")
-                        .HasColumnType("text")
-                        .HasColumnName("dispositivo_origen");
-
-                    b.Property<bool>("EstadoSesion")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("boolean")
-                        .HasDefaultValue(true)
-                        .HasColumnName("estado_sesion");
-
-                    b.Property<DateTime>("FechaExpiracion")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("fecha_expiracion");
-
-                    b.Property<DateTime>("FechaInicio")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("fecha_inicio")
-                        .HasDefaultValueSql("CURRENT_TIMESTAMP");
-
-                    b.Property<string>("IpOrigen")
-                        .HasMaxLength(45)
-                        .HasColumnType("character varying(45)")
-                        .HasColumnName("ip_origen");
-
-                    b.Property<string>("TokenOriginal")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("token_original");
-
-                    b.HasKey("ClaveTokenConvocatoria");
-
-                    b.HasIndex("ClaveTutorAspirante");
-
-                    b.ToTable("TokenConvocatorias", (string)null);
-                });
-
             modelBuilder.Entity("Telesecundaria.Models.TutorAspiranteEntity", b =>
                 {
                     b.Property<string>("ClaveTutorAspirante")
@@ -2148,14 +1590,6 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("character varying(50)")
                         .HasColumnName("apellido_paterno");
-
-                    b.Property<string>("Contrasena")
-                        .IsRequired()
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(255)
-                        .HasColumnType("character varying(255)")
-                        .HasDefaultValue("Temporal123")
-                        .HasColumnName("contrasena");
 
                     b.Property<string>("Correo")
                         .IsRequired()
@@ -2441,13 +1875,6 @@ namespace Telesecundaria.Persistence.Migrations
                         .IsRequired()
                         .HasConstraintName("fk_asig_alumno");
 
-                    b.HasOne("Telesecundaria.Models.CiclosEscolaresEntity", "CicloEscolar")
-                        .WithMany()
-                        .HasForeignKey("ClaveCiclo")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_asig_ciclo");
-
                     b.HasOne("Telesecundaria.Models.GruposEntity", "Grupo")
                         .WithMany("AsignacionGrupos")
                         .HasForeignKey("ClaveGrupo")
@@ -2455,20 +1882,9 @@ namespace Telesecundaria.Persistence.Migrations
                         .IsRequired()
                         .HasConstraintName("fk_asig_grupo");
 
-                    b.HasOne("Telesecundaria.Models.UsuariosEntity", "Usuario")
-                        .WithMany()
-                        .HasForeignKey("ClaveUsuario")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_asig_usuario");
-
                     b.Navigation("Alumno");
 
-                    b.Navigation("CicloEscolar");
-
                     b.Navigation("Grupo");
-
-                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("Telesecundaria.Models.AspirantesEntity", b =>
@@ -2490,27 +1906,6 @@ namespace Telesecundaria.Persistence.Migrations
                     b.Navigation("Convocatoria");
 
                     b.Navigation("TutorAspirante");
-                });
-
-            modelBuilder.Entity("Telesecundaria.Models.CargasDocumentosEntity", b =>
-                {
-                    b.HasOne("Telesecundaria.Models.ExpedientesEntity", "Expediente")
-                        .WithMany()
-                        .HasForeignKey("ClaveExpediente")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_expediente_carga");
-
-                    b.HasOne("Telesecundaria.Models.UsuariosEntity", "Usuario")
-                        .WithMany()
-                        .HasForeignKey("ClaveUsuario")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_usuario_carga");
-
-                    b.Navigation("Expediente");
-
-                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("Telesecundaria.Models.CitasInscripcionEntity", b =>
@@ -2586,27 +1981,6 @@ namespace Telesecundaria.Persistence.Migrations
                     b.Navigation("AdjuncionOriginal");
 
                     b.Navigation("DocumentoAspirante");
-                });
-
-            modelBuilder.Entity("Telesecundaria.Models.DetalleCargaEntity", b =>
-                {
-                    b.HasOne("Telesecundaria.Models.CargasDocumentosEntity", "CargaDocumento")
-                        .WithMany("DetalleCarga")
-                        .HasForeignKey("ClaveCarga")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_carga");
-
-                    b.HasOne("Telesecundaria.Models.DocumentosEntity", "Documento")
-                        .WithMany()
-                        .HasForeignKey("ClaveDocumento")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_documento");
-
-                    b.Navigation("CargaDocumento");
-
-                    b.Navigation("Documento");
                 });
 
             modelBuilder.Entity("Telesecundaria.Models.DetalleRevisionEntity", b =>
@@ -2725,13 +2099,6 @@ namespace Telesecundaria.Persistence.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Telesecundaria.Models.AspirantesEntity", "Aspirante")
-                        .WithMany()
-                        .HasForeignKey("ClaveAspirante")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_entregas_aspirante");
-
                     b.HasOne("Telesecundaria.Models.CitasInscripcionEntity", "CitaInscripcion")
                         .WithOne("Entrega")
                         .HasForeignKey("Telesecundaria.Models.EntregasEntity", "ClaveCita")
@@ -2754,8 +2121,6 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasConstraintName("fk_entregas_usuario");
 
                     b.Navigation("AdjuncionOriginal");
-
-                    b.Navigation("Aspirante");
 
                     b.Navigation("CitaInscripcion");
 
@@ -2807,81 +2172,6 @@ namespace Telesecundaria.Persistence.Migrations
                     b.Navigation("Convocatoria");
                 });
 
-            modelBuilder.Entity("Telesecundaria.Models.InscripcionesEntity", b =>
-                {
-                    b.HasOne("Telesecundaria.Models.AlumnosEntity", "Alumno")
-                        .WithMany()
-                        .HasForeignKey("ClaveAlumno")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_ins_alumno");
-
-                    b.HasOne("Telesecundaria.Models.CiclosEscolaresEntity", "CicloEscolar")
-                        .WithMany()
-                        .HasForeignKey("ClaveCiclo")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_ins_ciclo");
-
-                    b.HasOne("Telesecundaria.Models.GruposEntity", "Grupo")
-                        .WithMany()
-                        .HasForeignKey("ClaveGrupo")
-                        .HasConstraintName("fk_ins_grupo");
-
-                    b.HasOne("Telesecundaria.Models.PagosEntity", "Pago")
-                        .WithMany()
-                        .HasForeignKey("ClavePago")
-                        .HasConstraintName("fk_ins_pago");
-
-                    b.HasOne("Telesecundaria.Models.PeriodosEntity", "Periodo")
-                        .WithMany()
-                        .HasForeignKey("ClavePeriodo")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_ins_periodo");
-
-                    b.HasOne("Telesecundaria.Models.UsuariosEntity", "Usuario")
-                        .WithMany()
-                        .HasForeignKey("ClaveUsuario")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_ins_usuario");
-
-                    b.Navigation("Alumno");
-
-                    b.Navigation("CicloEscolar");
-
-                    b.Navigation("Grupo");
-
-                    b.Navigation("Pago");
-
-                    b.Navigation("Periodo");
-
-                    b.Navigation("Usuario");
-                });
-
-            modelBuilder.Entity("Telesecundaria.Models.LogueosEntity", b =>
-                {
-                    b.HasOne("Telesecundaria.Models.UsuariosEntity", "Usuario")
-                        .WithMany("Logueos")
-                        .HasForeignKey("ClaveUsuario")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .HasConstraintName("fk_logueos_usuarios");
-
-                    b.Navigation("Usuario");
-                });
-
-            modelBuilder.Entity("Telesecundaria.Models.ModulosEntity", b =>
-                {
-                    b.HasOne("Telesecundaria.Models.ModulosEntity", "ModuloPadre")
-                        .WithMany("SubModulos")
-                        .HasForeignKey("ClaveModuloPadre")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .HasConstraintName("fk_modulo_padre");
-
-                    b.Navigation("ModuloPadre");
-                });
-
             modelBuilder.Entity("Telesecundaria.Models.NotificacionesEntity", b =>
                 {
                     b.HasOne("Telesecundaria.Models.ReceptoresEntity", "Receptor")
@@ -2903,69 +2193,6 @@ namespace Telesecundaria.Persistence.Migrations
                     b.Navigation("TipoNotificacion");
                 });
 
-            modelBuilder.Entity("Telesecundaria.Models.PagosEntity", b =>
-                {
-                    b.HasOne("Telesecundaria.Models.CiclosEscolaresEntity", "CicloEscolar")
-                        .WithMany()
-                        .HasForeignKey("ClaveCiclo")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_pago_ciclo");
-
-                    b.HasOne("Telesecundaria.Models.TutoresEntity", "Tutor")
-                        .WithMany()
-                        .HasForeignKey("ClaveTutor")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_pago_tutor");
-
-                    b.HasOne("Telesecundaria.Models.UsuariosEntity", "Usuario")
-                        .WithMany()
-                        .HasForeignKey("ClaveUsuario")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_pago_usuario");
-
-                    b.Navigation("CicloEscolar");
-
-                    b.Navigation("Tutor");
-
-                    b.Navigation("Usuario");
-                });
-
-            modelBuilder.Entity("Telesecundaria.Models.PeriodosEntity", b =>
-                {
-                    b.HasOne("Telesecundaria.Models.CiclosEscolaresEntity", "CicloEscolar")
-                        .WithMany()
-                        .HasForeignKey("ClaveCiclo")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_periodo_ciclo");
-
-                    b.Navigation("CicloEscolar");
-                });
-
-            modelBuilder.Entity("Telesecundaria.Models.PermisosEntity", b =>
-                {
-                    b.HasOne("Telesecundaria.Models.ModulosEntity", "Modulo")
-                        .WithMany("Permisos")
-                        .HasForeignKey("ClaveModulo")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_permiso_modulo");
-
-                    b.HasOne("Telesecundaria.Models.RolesEntity", "Rol")
-                        .WithMany("Permisos")
-                        .HasForeignKey("ClaveRol")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_permiso_rol");
-
-                    b.Navigation("Modulo");
-
-                    b.Navigation("Rol");
-                });
-
             modelBuilder.Entity("Telesecundaria.Models.PublicacionesEntity", b =>
                 {
                     b.HasOne("Telesecundaria.Models.ConvocatoriasEntity", "Convocatoria")
@@ -2973,20 +2200,10 @@ namespace Telesecundaria.Persistence.Migrations
                         .HasForeignKey("ClaveConvocatoria")
                         .HasConstraintName("fk_convocatoria_publicada");
 
-                    b.HasOne("Telesecundaria.Models.GaleriaImagenesEntity", "ImagenPrincipal")
+                    b.HasOne("Telesecundaria.Models.GaleriaImagenesEntity", "GaleriaImagen")
                         .WithMany()
-                        .HasForeignKey("ClaveImagenPrincipal")
-                        .HasConstraintName("fk_imagen_principal");
-
-                    b.HasOne("Telesecundaria.Models.GaleriaImagenesEntity", "ImagenSecundaria")
-                        .WithMany()
-                        .HasForeignKey("ClaveImagenSecundaria")
-                        .HasConstraintName("fk_imagen_secundaria");
-
-                    b.HasOne("Telesecundaria.Models.GaleriaImagenesEntity", "ImagenTercera")
-                        .WithMany()
-                        .HasForeignKey("ClaveImagenTercera")
-                        .HasConstraintName("fk_imagen_tercera");
+                        .HasForeignKey("ClaveImagen")
+                        .HasConstraintName("fk_imagen_galeria");
 
                     b.HasOne("Telesecundaria.Models.UsuariosEntity", "Usuario")
                         .WithMany("Publicaciones")
@@ -2997,11 +2214,7 @@ namespace Telesecundaria.Persistence.Migrations
 
                     b.Navigation("Convocatoria");
 
-                    b.Navigation("ImagenPrincipal");
-
-                    b.Navigation("ImagenSecundaria");
-
-                    b.Navigation("ImagenTercera");
+                    b.Navigation("GaleriaImagen");
 
                     b.Navigation("Usuario");
                 });
@@ -3093,18 +2306,6 @@ namespace Telesecundaria.Persistence.Migrations
                     b.Navigation("Usuario");
                 });
 
-            modelBuilder.Entity("Telesecundaria.Models.TokenConvocatoriasEntity", b =>
-                {
-                    b.HasOne("Telesecundaria.Models.TutorAspiranteEntity", "TutorAspirante")
-                        .WithMany()
-                        .HasForeignKey("ClaveTutorAspirante")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_token_tutor");
-
-                    b.Navigation("TutorAspirante");
-                });
-
             modelBuilder.Entity("Telesecundaria.Models.TutoresAlumnosEntity", b =>
                 {
                     b.HasOne("Telesecundaria.Models.AlumnosEntity", "Alumno")
@@ -3189,11 +2390,6 @@ namespace Telesecundaria.Persistence.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Telesecundaria.Models.CargasDocumentosEntity", b =>
-                {
-                    b.Navigation("DetalleCarga");
-                });
-
             modelBuilder.Entity("Telesecundaria.Models.CitasInscripcionEntity", b =>
                 {
                     b.Navigation("Entrega")
@@ -3232,13 +2428,6 @@ namespace Telesecundaria.Persistence.Migrations
                     b.Navigation("AsignacionGrupos");
                 });
 
-            modelBuilder.Entity("Telesecundaria.Models.ModulosEntity", b =>
-                {
-                    b.Navigation("Permisos");
-
-                    b.Navigation("SubModulos");
-                });
-
             modelBuilder.Entity("Telesecundaria.Models.NotificacionesEntity", b =>
                 {
                     b.Navigation("Envios");
@@ -3263,8 +2452,6 @@ namespace Telesecundaria.Persistence.Migrations
             modelBuilder.Entity("Telesecundaria.Models.RolesEntity", b =>
                 {
                     b.Navigation("EmpleadoRoles");
-
-                    b.Navigation("Permisos");
                 });
 
             modelBuilder.Entity("Telesecundaria.Models.TutorAspiranteEntity", b =>
@@ -3284,8 +2471,6 @@ namespace Telesecundaria.Persistence.Migrations
             modelBuilder.Entity("Telesecundaria.Models.UsuariosEntity", b =>
                 {
                     b.Navigation("Entregas");
-
-                    b.Navigation("Logueos");
 
                     b.Navigation("Publicaciones");
 
