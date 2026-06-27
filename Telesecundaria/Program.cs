@@ -65,6 +65,10 @@ builder.Services.AddScoped<IDestinoNotificacionRepository, DestinoNotificacionRe
 builder.Services.AddScoped<IDestinoNotificacionService, DestinoNotificacionService>();
 builder.Services.AddScoped<IReceptoresRepository, ReceptoresRepository>();
 builder.Services.AddScoped<IReceptoresService, ReceptoresService>();
+builder.Services.AddScoped<IEnviosRepository, EnviosRepository>();
+builder.Services.AddScoped<IEnviosService, EnviosService>();
+builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddHostedService<EnvioCorreoBackgroundService>();
 
 builder.Services.AddHttpContextAccessor();
 
