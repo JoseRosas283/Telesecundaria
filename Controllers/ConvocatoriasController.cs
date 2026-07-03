@@ -106,7 +106,7 @@ namespace Telesecundaria.Controllers
                 return NotFound(new { mensaje = ex.Message });
             }
             catch (Exception ex)
-            {
+    {
                 return BadRequest(new { mensaje = "No se pudo eliminar la convocatoria", detalle = ex.Message });
             }
         }

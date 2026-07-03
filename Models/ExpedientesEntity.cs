@@ -17,6 +17,7 @@ namespace Telesecundaria.Models
         public virtual EntregasEntity Entrega { get; set; }
 
         // Colecciones
+        [JsonIgnore]
         public ICollection<DocumentosEntity> Documentos { get; set; } = new List<DocumentosEntity>();
     }
 }

@@ -16,9 +16,11 @@ namespace Telesecundaria.Models
         public virtual ExpedientesEntity Expediente { get; set; }
 
         // Colecciones
+        [JsonIgnore]
         public ICollection<EmpleadoRolEntity> EmpleadoRoles { get; set; } = new List<EmpleadoRolEntity>();
 
         // Relación 1:1
+        [JsonIgnore]
         public UsuariosEntity Usuario { get; set; }
     }
 }

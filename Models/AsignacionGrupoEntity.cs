@@ -7,7 +7,7 @@ namespace Telesecundaria.Models
         public string ClaveAsignacion { get; set; }
         public string ClaveAlumno { get; set; }
         public string ClaveGrupo { get; set; }
-        public string ClaveUsuario { get; set; }  
+        public string ClaveUsuario { get; set; }
         public string ClaveCiclo { get; set; }
         public DateTime? FechaAsignacion { get; set; }
         public string? Estatus { get; set; }

@@ -107,7 +107,7 @@ namespace Telesecundaria.Services.Implementations
 
         private static ConvocatoriaResponseDTO MapearResponse(ConvocatoriasEntity c) =>
             new ConvocatoriaResponseDTO
-            {
+    {
                 ClaveConvocatoria = c.ClaveConvocatoria,
                 Titulo = c.Titulo,
                 Descripcion = c.Descripcion,

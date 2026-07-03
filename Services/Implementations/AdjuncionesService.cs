@@ -36,7 +36,7 @@ namespace Telesecundaria.Services.Implementations
                 throw new ArgumentException("La clave del aspirante es obligatoria.");
 
             // Lista de documentos recibidos alineandolo con el catálogo en la DB
-            var documentos = new List<(IFormFile Archivo, string NombreTipo)> 
+            var documentos = new List<(IFormFile Archivo, string NombreTipo)>
             {
                 (dto.ActaNacimiento,       "ACTA DE NACIMIENTO"),
                 (dto.Curp,                 "CURP"),

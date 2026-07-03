@@ -88,7 +88,7 @@ namespace Telesecundaria.Repositories.Implementations
         }
 
         public async Task EliminarConvocatoriaAsync(string clave, string nombreUsuario)
-        {
+    {
             await _context.Database.ExecuteSqlRawAsync(
                 @"CALL sp_eliminar_convocatoria(
                     @p_claveConvocatoria,
