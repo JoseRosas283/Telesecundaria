@@ -1,0 +1,1482 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\documentosentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\documentosentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\empleadorolentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\empleadorolentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\controllers\\alumnoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\controllers\\alumnoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\repositories\\implementations\\alumnosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\repositories\\implementations\\alumnosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\repositories\\interfaces\\ialumnosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\repositories\\interfaces\\ialumnosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\repositories\\interfaces\\iconvocatoriasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\repositories\\interfaces\\iconvocatoriasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\services\\interfaces\\ialumnosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\services\\interfaces\\ialumnosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\services\\implementations\\alumnosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\services\\implementations\\alumnosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\repositories\\implementations\\convocatoriasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\repositories\\implementations\\convocatoriasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\services\\interfaces\\iconvocatoriasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\services\\interfaces\\iconvocatoriasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\services\\implementations\\convocatoriasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\services\\implementations\\convocatoriasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\controllers\\convocatoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\controllers\\convocatoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\alumnosentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\alumnosentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\tiponotificacionesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\tiponotificacionesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\detallerevisionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\detallerevisionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\adjuncionesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\adjuncionesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\documentosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\documentosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\detalleadjuncionoriginaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\detalleadjuncionoriginaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\adjuncionesoriginalesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\adjuncionesoriginalesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\validaciondocumentosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\validaciondocumentosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\asignaciongrupodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\asignaciongrupodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\tutoresalumnosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\tutoresalumnosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\gruposdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\gruposdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\alumnosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\alumnosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\empleadoroldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\empleadoroldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\usuariosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\usuariosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\empleadosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\empleadosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\expedientesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\expedientesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\entregasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\entregasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\detallerevisiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\detallerevisiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\citasinscripciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\citasinscripciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\revisionesaceptadasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\revisionesaceptadasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\enviosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\enviosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\revisionesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\revisionesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\detalleadjunciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\detalleadjunciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\notificacionesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\notificacionesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\destinonotificaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\destinonotificaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\requisitosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\requisitosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\adjuncionesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\adjuncionesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\documentosaspirantedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\documentosaspirantedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\publicacionesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\publicacionesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\receptoresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\receptoresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\filavirtualdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\filavirtualdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\direccionesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\direccionesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\aspirantesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\aspirantesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\tutoresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\tutoresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\tutoraspirantedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\tutoraspirantedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\rolesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\rolesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\convocatoriasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\convocatoriasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\tiponotificacionesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\tiponotificacionesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\tipodocumentosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\tipodocumentosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\dtos\\galeriaimagenesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\dtos\\galeriaimagenesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\galeriaimagenesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\galeriaimagenesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\filavirtualentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\filavirtualentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\validaciondocumentosentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\validaciondocumentosentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\usuariosentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\usuariosentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\tutoresentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\tutoresentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\tutoresalumnosentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\tutoresalumnosentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\tutoraspiranteentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\tutoraspiranteentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\tipodocumentosentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\tipodocumentosentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\rolesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\rolesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\revisionesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\revisionesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\revisionesaceptadasentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\revisionesaceptadasentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\requisitosentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\requisitosentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\receptoresentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\receptoresentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\publicacionesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\publicacionesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\notificacionesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\notificacionesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\gruposentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\gruposentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\expedientesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\expedientesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\enviosentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\enviosentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\entregasentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\entregasentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\empleadosentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\empleadosentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\documentosaspiranteentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\documentosaspiranteentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\direccionesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\direccionesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\detalleadjuncionoriginalentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\detalleadjuncionoriginalentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\detalleadjuncionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\detalleadjuncionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\destinonotificacionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\destinonotificacionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\convocatoriasentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\convocatoriasentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\citasinscripcionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\citasinscripcionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\aspirantesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\aspirantesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\asignaciongrupoentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\asignaciongrupoentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\models\\adjuncionesoriginalesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\models\\adjuncionesoriginalesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|c:\\users\\josea\\documents\\9_estadia-tsu\\api\\telesecundaria\\telesecundaria\\telesecundaria.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6634803E-F507-4D73-88BF-F499E6FB1905}|Telesecundaria\\Telesecundaria.csproj|solutionrelative:telesecundaria\\telesecundaria.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AlumnosController.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Controllers\\AlumnosController.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Controllers\\AlumnosController.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Controllers\\AlumnosController.cs",
+              "RelativeToolTip": "Telesecundaria\\Controllers\\AlumnosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T04:51:19.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IAlumnosService.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Services\\Interfaces\\IAlumnosService.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Services\\Interfaces\\IAlumnosService.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Services\\Interfaces\\IAlumnosService.cs",
+              "RelativeToolTip": "Telesecundaria\\Services\\Interfaces\\IAlumnosService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T04:50:41.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IConvocatoriasRepository.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Repositories\\Interfaces\\IConvocatoriasRepository.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Repositories\\Interfaces\\IConvocatoriasRepository.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Repositories\\Interfaces\\IConvocatoriasRepository.cs",
+              "RelativeToolTip": "Telesecundaria\\Repositories\\Interfaces\\IConvocatoriasRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T04:45:31.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAlumnosRepository.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Repositories\\Interfaces\\IAlumnosRepository.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Repositories\\Interfaces\\IAlumnosRepository.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Repositories\\Interfaces\\IAlumnosRepository.cs",
+              "RelativeToolTip": "Telesecundaria\\Repositories\\Interfaces\\IAlumnosRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T04:50:02.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AlumnosRepository.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Repositories\\Implementations\\AlumnosRepository.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Repositories\\Implementations\\AlumnosRepository.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Repositories\\Implementations\\AlumnosRepository.cs",
+              "RelativeToolTip": "Telesecundaria\\Repositories\\Implementations\\AlumnosRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T04:50:24.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AlumnosService.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Services\\Implementations\\AlumnosService.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Services\\Implementations\\AlumnosService.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Services\\Implementations\\AlumnosService.cs",
+              "RelativeToolTip": "Telesecundaria\\Services\\Implementations\\AlumnosService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T04:50:54.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ConvocatoriasService.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Services\\Implementations\\ConvocatoriasService.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Services\\Implementations\\ConvocatoriasService.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Services\\Implementations\\ConvocatoriasService.cs",
+              "RelativeToolTip": "Telesecundaria\\Services\\Implementations\\ConvocatoriasService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T04:47:50.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IConvocatoriasService.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Services\\Interfaces\\IConvocatoriasService.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Services\\Interfaces\\IConvocatoriasService.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Services\\Interfaces\\IConvocatoriasService.cs",
+              "RelativeToolTip": "Telesecundaria\\Services\\Interfaces\\IConvocatoriasService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T04:47:09.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ConvocatoriasRepository.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Repositories\\Implementations\\ConvocatoriasRepository.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Repositories\\Implementations\\ConvocatoriasRepository.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Repositories\\Implementations\\ConvocatoriasRepository.cs",
+              "RelativeToolTip": "Telesecundaria\\Repositories\\Implementations\\ConvocatoriasRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T04:46:18.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmpleadoRolEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\EmpleadoRolEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\EmpleadoRolEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\EmpleadoRolEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\EmpleadoRolEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:15:03.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DocumentosEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\DocumentosEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\DocumentosEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\DocumentosEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\DocumentosEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:13:51.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Persistence\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Persistence\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Persistence\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Telesecundaria\\Persistence\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABYFAAAAAAAAAAAMwBgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T20:15:31.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Program.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Program.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Program.cs",
+              "RelativeToolTip": "Telesecundaria\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T02:21:26.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ConvocatoriasController.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Controllers\\ConvocatoriasController.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Controllers\\ConvocatoriasController.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Controllers\\ConvocatoriasController.cs",
+              "RelativeToolTip": "Telesecundaria\\Controllers\\ConvocatoriasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T04:49:04.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AlumnosEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\AlumnosEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\AlumnosEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\AlumnosEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\AlumnosEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:09:11.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\appsettings.json",
+              "RelativeDocumentMoniker": "Telesecundaria\\appsettings.json",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\appsettings.json",
+              "RelativeToolTip": "Telesecundaria\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-16T02:19:41.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AdjuncionesEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\AdjuncionesEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\AdjuncionesEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\AdjuncionesEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\AdjuncionesEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:03:06.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DetalleRevisionEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\DetalleRevisionEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\DetalleRevisionEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\DetalleRevisionEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\DetalleRevisionEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:08:08.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TipoNotificacionesEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\TipoNotificacionesEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\TipoNotificacionesEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\TipoNotificacionesEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\TipoNotificacionesEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T20:56:51.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DocumentosDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\DocumentosDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\DocumentosDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\DocumentosDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\DocumentosDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T00:33:24.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DetalleAdjuncionOriginalDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\DetalleAdjuncionOriginalDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\DetalleAdjuncionOriginalDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\DetalleAdjuncionOriginalDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\DetalleAdjuncionOriginalDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T00:32:48.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AdjuncionesOriginalesDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\AdjuncionesOriginalesDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\AdjuncionesOriginalesDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\AdjuncionesOriginalesDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\AdjuncionesOriginalesDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T00:31:16.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ValidacionDocumentosDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\ValidacionDocumentosDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\ValidacionDocumentosDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\ValidacionDocumentosDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\ValidacionDocumentosDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T00:30:47.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AsignacionGrupoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\AsignacionGrupoDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\AsignacionGrupoDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\AsignacionGrupoDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\AsignacionGrupoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T00:30:15.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TutoresAlumnosDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\TutoresAlumnosDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\TutoresAlumnosDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\TutoresAlumnosDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\TutoresAlumnosDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T00:29:34.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "GruposDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\GruposDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\GruposDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\GruposDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\GruposDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T00:28:46.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AlumnosDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\AlumnosDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\AlumnosDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\AlumnosDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\AlumnosDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T00:27:13.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "EmpleadoRolDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\EmpleadoRolDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\EmpleadoRolDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\EmpleadoRolDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\EmpleadoRolDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T00:25:44.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UsuariosDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\UsuariosDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\UsuariosDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\UsuariosDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\UsuariosDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T00:24:53.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "EmpleadosDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\EmpleadosDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\EmpleadosDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\EmpleadosDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\EmpleadosDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T00:24:12.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ExpedientesDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\ExpedientesDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\ExpedientesDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\ExpedientesDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\ExpedientesDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T00:22:22.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "EntregasDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\EntregasDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\EntregasDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\EntregasDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\EntregasDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T00:21:54.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "DetalleRevisionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\DetalleRevisionDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\DetalleRevisionDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\DetalleRevisionDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\DetalleRevisionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T00:21:28.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CitasInscripcionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\CitasInscripcionDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\CitasInscripcionDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\CitasInscripcionDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\CitasInscripcionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T00:20:55.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "RevisionesAceptadasDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\RevisionesAceptadasDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\RevisionesAceptadasDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\RevisionesAceptadasDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\RevisionesAceptadasDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T23:59:27.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "EnviosDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\EnviosDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\EnviosDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\EnviosDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\EnviosDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T23:58:59.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "RevisionesDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\RevisionesDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\RevisionesDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\RevisionesDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\RevisionesDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T23:57:23.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "DetalleAdjuncionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\DetalleAdjuncionDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\DetalleAdjuncionDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\DetalleAdjuncionDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\DetalleAdjuncionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T23:56:47.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "NotificacionesDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\NotificacionesDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\NotificacionesDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\NotificacionesDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\NotificacionesDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T23:56:10.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "DestinoNotificacionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\DestinoNotificacionDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\DestinoNotificacionDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\DestinoNotificacionDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\DestinoNotificacionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T23:55:45.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "RequisitosDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\RequisitosDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\RequisitosDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\RequisitosDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\RequisitosDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T23:54:48.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "AdjuncionesDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\AdjuncionesDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\AdjuncionesDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\AdjuncionesDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\AdjuncionesDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T23:54:11.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "DocumentosAspiranteDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\DocumentosAspiranteDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\DocumentosAspiranteDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\DocumentosAspiranteDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\DocumentosAspiranteDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T23:53:27.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "PublicacionesDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\PublicacionesDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\PublicacionesDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\PublicacionesDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\PublicacionesDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T23:52:52.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ReceptoresDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\ReceptoresDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\ReceptoresDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\ReceptoresDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\ReceptoresDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T23:52:10.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "FilaVirtualDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\FilaVirtualDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\FilaVirtualDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\FilaVirtualDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\FilaVirtualDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T23:51:38.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "DireccionesDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\DireccionesDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\DireccionesDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\DireccionesDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\DireccionesDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T23:49:21.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "AspirantesDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\AspirantesDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\AspirantesDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\AspirantesDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\AspirantesDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T23:48:43.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "TutoresDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\TutoresDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\TutoresDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\TutoresDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\TutoresDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T23:48:12.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "TutorAspiranteDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\TutorAspiranteDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\TutorAspiranteDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\TutorAspiranteDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\TutorAspiranteDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T23:47:48.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "RolesDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\RolesDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\RolesDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\RolesDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\RolesDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T23:47:13.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ConvocatoriasDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\ConvocatoriasDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\ConvocatoriasDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\ConvocatoriasDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\ConvocatoriasDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T23:46:31.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "TipoNotificacionesDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\TipoNotificacionesDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\TipoNotificacionesDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\TipoNotificacionesDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\TipoNotificacionesDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T23:45:50.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "TipoDocumentosDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\TipoDocumentosDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\TipoDocumentosDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\TipoDocumentosDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\TipoDocumentosDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T23:44:44.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "GaleriaImagenesDTO.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\GaleriaImagenesDTO.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\DTOs\\GaleriaImagenesDTO.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\DTOs\\GaleriaImagenesDTO.cs",
+              "RelativeToolTip": "Telesecundaria\\DTOs\\GaleriaImagenesDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T23:43:48.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "GaleriaImagenesEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\GaleriaImagenesEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\GaleriaImagenesEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\GaleriaImagenesEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\GaleriaImagenesEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T20:52:00.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "FilaVirtualEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\FilaVirtualEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\FilaVirtualEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\FilaVirtualEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\FilaVirtualEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:01:37.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "ValidacionDocumentosEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\ValidacionDocumentosEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\ValidacionDocumentosEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\ValidacionDocumentosEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\ValidacionDocumentosEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:12:27.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "UsuariosEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\UsuariosEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\UsuariosEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\UsuariosEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\UsuariosEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:14:36.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "TutoresEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\TutoresEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\TutoresEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\TutoresEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\TutoresEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T20:58:37.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "TutoresAlumnosEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\TutoresAlumnosEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\TutoresAlumnosEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\TutoresAlumnosEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\TutoresAlumnosEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:10:54.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "TutorAspiranteEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\TutorAspiranteEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\TutorAspiranteEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\TutorAspiranteEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\TutorAspiranteEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T20:57:55.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "TipoDocumentosEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\TipoDocumentosEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\TipoDocumentosEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\TipoDocumentosEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\TipoDocumentosEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T20:56:21.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "RolesEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\RolesEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\RolesEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\RolesEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\RolesEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T20:57:27.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "RevisionesEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\RevisionesEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\RevisionesEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\RevisionesEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\RevisionesEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:04:59.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "RevisionesAceptadasEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\RevisionesAceptadasEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\RevisionesAceptadasEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\RevisionesAceptadasEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\RevisionesAceptadasEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:07:29.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "RequisitosEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\RequisitosEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\RequisitosEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\RequisitosEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\RequisitosEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:03:29.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "ReceptoresEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\ReceptoresEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\ReceptoresEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\ReceptoresEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\ReceptoresEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:00:00.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "PublicacionesEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\PublicacionesEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\PublicacionesEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\PublicacionesEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\PublicacionesEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:01:13.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "NotificacionesEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\NotificacionesEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\NotificacionesEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\NotificacionesEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\NotificacionesEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:04:08.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "GruposEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\GruposEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\GruposEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\GruposEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\GruposEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:11:18.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "ExpedientesEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\ExpedientesEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\ExpedientesEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\ExpedientesEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\ExpedientesEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:08:52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "EnviosEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\EnviosEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\EnviosEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\EnviosEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\EnviosEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:06:51.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "EntregasEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\EntregasEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\EntregasEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\EntregasEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\EntregasEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:08:21.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "EmpleadosEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\EmpleadosEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\EmpleadosEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\EmpleadosEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\EmpleadosEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:14:11.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "DocumentosAspiranteEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\DocumentosAspiranteEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\DocumentosAspiranteEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\DocumentosAspiranteEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\DocumentosAspiranteEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:02:07.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "DireccionesEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\DireccionesEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\DireccionesEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\DireccionesEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\DireccionesEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:00:50.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "DetalleAdjuncionOriginalEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\DetalleAdjuncionOriginalEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\DetalleAdjuncionOriginalEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\DetalleAdjuncionOriginalEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\DetalleAdjuncionOriginalEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:13:35.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "DetalleAdjuncionEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\DetalleAdjuncionEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\DetalleAdjuncionEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\DetalleAdjuncionEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\DetalleAdjuncionEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:04:35.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "DestinoNotificacionEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\DestinoNotificacionEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\DestinoNotificacionEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\DestinoNotificacionEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\DestinoNotificacionEntity.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:03:53.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "ConvocatoriasEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\ConvocatoriasEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\ConvocatoriasEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\ConvocatoriasEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\ConvocatoriasEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T20:57:14.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "CitasInscripcionEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\CitasInscripcionEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\CitasInscripcionEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\CitasInscripcionEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\CitasInscripcionEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:06:39.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "AspirantesEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\AspirantesEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\AspirantesEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\AspirantesEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\AspirantesEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T20:59:30.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "AsignacionGrupoEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\AsignacionGrupoEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\AsignacionGrupoEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\AsignacionGrupoEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\AsignacionGrupoEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:11:46.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "AdjuncionesOriginalesEntity.cs",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\AdjuncionesOriginalesEntity.cs",
+              "RelativeDocumentMoniker": "Telesecundaria\\Models\\AdjuncionesOriginalesEntity.cs",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Models\\AdjuncionesOriginalesEntity.cs",
+              "RelativeToolTip": "Telesecundaria\\Models\\AdjuncionesOriginalesEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAB/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:13:04.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "Telesecundaria.csproj",
+              "DocumentMoniker": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Telesecundaria.csproj",
+              "RelativeDocumentMoniker": "Telesecundaria\\Telesecundaria.csproj",
+              "ToolTip": "C:\\Users\\josea\\Documents\\9_ESTADIA-TSU\\API\\Telesecundaria\\Telesecundaria\\Telesecundaria.csproj",
+              "RelativeToolTip": "Telesecundaria\\Telesecundaria.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-15T20:01:09.345Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
