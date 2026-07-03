@@ -97,7 +97,7 @@ namespace Telesecundaria.Persistence
                       .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
                 entity.HasCheckConstraint("ck_tipo_recurso_galeria",
-                    "tipo_recurso IN ('Eventos Culturales', 'Noticia', 'Aviso', 'Convocatorias', 'otros')");
+                    "tipo_recurso IN ('Eventos Culturales', 'Noticia', 'Aviso', 'Convocatorias', 'Galería', 'otros')");
             });
 
             // TipoDocumentos
